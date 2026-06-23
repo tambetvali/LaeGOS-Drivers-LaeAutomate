@@ -1,0 +1,143 @@
+Error of Truth Value Tables
+Truth Value Tables
+Truth Value Tables have all logic operations contained within Tables (or Matrices) of size two times
+two as input – one bit for both Truth Values True and False, and one boolean output – the value in
+each of four squares of the Table. The value is either True or False. And, or, but also conclusions
+(implication operation) are Truth Value Tables. Such table has 16 possible values – so there are 16
+such operations.
+Thus, as it’s binary table of only two values, implication mark has such table that from B => A, it
+follows that A => B,
+
+Alternative to Truth Value Table
+It should also contain unknowns – A=>B, then if a, then B, but it’s unknown whether, if B, then A.
+It contains <=> as separate operation. A=True and B=True cell if True, other three possibilities are
+unknown for this logic, and this is Truth Value Table with third possibility – unknown. Now you
+cannot combine this from simple operations, like and and or and not, so easily.
+
+Meaning if your table is not closed
+If your table contains unknown values, there are more possible logic combinations – you cannot
+assume such thing so easily.
+
+Meaning that it is not Metaphysical
+If two things are both True, but philosophically, one is the Reason, Cause and the other is the
+Implication, Effect – as both always have True values, they exist absolutely, you cannot, by terms of
+Truth Value Table, separate the Cause and Effect – as they both hold, one follows from other and
+the other from other. Also, if they are always occuring together, never alone, you cannot combine a
+Truth Value Table, which assumes so. Consequently, it’s hard to speak about Soul and Spirit for
+example, or about how Mind is the Source of Matter – as they both are, then Mind must also be it’s
+Effect, because the Logic Table is the same. Metaphysically, if they both imply each other, in sense
+of they occur at the same time – by much of Nowadays Science, you simply cannot say that one is
+the Reason, and other the Effect.
+
+Meaning in Alchemy
+I have told that to achieve Mind over Matter, one must:
+•
+
+Find out, which one is the True Equilibrum of Matter – it’s Free, and still in it’s Cycle. This
+one is beneficial for you and the Matter.
+
+•
+
+Or when the Matter is Trapped – the Cause is not it’s own interest, or Karma of Matter, but
+it’s of general interest.
+
+I think that 5 element theories of Buddhism and Taoism, or Hermetics Elements, of four Classical
+Elements of Magic of Europe, are far better – they have different paradigms, but essentially it’s a
+
+Mind-Compatible Model, you can see this matter directly with your senses, not by some Physic
+Apparatus. Also, those Models introduce Mental Qualities to Matter – whether it’s happy or not.
+Physics of your Body does not change inside and outside, but it loses complexity. It does not change
+any Quality, only Quantities – it’s natural to say that the Material Feeling of the Matter is Simpler,
+but with the same Qualities, as Material Feeling of the Human, who is connected to their Material
+Body and it’s Fields. By Effectivity, it’s Natural that human has evolved, and also the Biosystem
+and Material Structure of Earth, so that the Well-Being (it’s Equilibrum) is Natural to this Matter
+and thus there are less Tensions – otherwise it would be destroyed, for example, by Radiation or
+other Gravitation Form, which seems real Angry and Destroying all the Beauty.
+We must assume that the senses of Beauty for Matter are the same integral and generally the same
+with the Sense of Beauty of Matter – as it constructs it’s Structures, Humans feel it’s Beautiful, and
+should the Structure be Destroyed – they feel it’s ugly. It’s Natural as Matter is Constantly Building
+a Structure, and only by Large Force Losing It. But does it achieve it’s Equilibrium? Humans can
+help in this and thus they achieve Positive Karma with Matter. This also means that in MatterInvolved Ecosystem, allowing and caring for More Structured Forms of Matter, More Beautiful and
+with Less Tension or Weakness for Both Human and The Matter, such Forms are Strong and seem
+to be, thus, Beautiful and Happy – they Vibrate Those Properties by a Language Known to Both.
+So, when the matter is Naturally Forming it’s Most Beautiful Structures?
+You also need to measure the Intent – as Human get’s Intent for More Structured Matter, and for
+Teaching and Learning this, only this Intent, relative to it’s long-term-success, gets Power Over
+Matter – or rather, a mutually beneficial relation with it, triggering beautiful miracles and otherwise
+successes by the way our Brains work – making the Structure of Matter desirable to Itself and
+Humans, the Matter also flows into Structures More Beneficial to us, and in extreme conditions of
+energy, can do Miracles – the Change would be complex, like Creativity. We are not so interested in
+Miracles of Destroying Matter, unless it’s a Material Demon, like Poisonous Material. We can
+assume that Karmically and Structurally Balanced Matter is not Poisonous, but in Harmony, we find
+Structures Mutually Beneficial – Life is a Higher Form of Matter, even if some percent achieves
+this – it would do the Work of Creativity, and also release the Tensions of Other Matter, which still
+Vibrate in Intelligence and it’s Benefits.
+Matter is Low-Frequency energy, but definitely it’s ways to Release Tension and thus Gain Free
+Energy – not an Inner Conflict of Stability Functions, a Tension. It’s structures of Beneficial Effect
+are Similar to Life – they Restore their Structure Somehow after Using it Out, like the Chemical
+Processes of Earth or Human, who Repair. Definitely, Matter is Always Repairing and as it finds
+Better States, those Solidify and Repeat as Patterns, thus forming a rudimentary Evolution. We can
+Assume that Universe Remembers the Best and Worst Patterns and slowly, attractors and repellors
+(anti-attractors) appear. This is the Major Tensor in activity and as other results break down, this
+result builds up and slowly, as bad Karma is impossibility and this breaks the Structures – realize
+that more aligned matter, and higher life, is more possible, but less possible in relation to even more
+higher Life and Equilibrum.
+Truth Value Tables gives us Physics, which does not consider this – it looks the Reactions, but only
+in complete, and does not divide it into Good and Bad Causes and Effects – Good and Bad
+conditions, energies, states into which Matter falls. To do this by results of Physics is Inefficient:
+
+•
+
+It has very complex Model, hard to Understand by Human Mind, whereas 5-elementsystems have simpler Model.
+
+•
+
+It’s Model is not intuitive – it does not simplify into the structures our Brain readily forms
+from Symmetries. Thus, we cannot say easily, whether this Matter is Enjoying – but we can
+say Natural Reactions of Five Elements can be More or Less Natural, so we are beneficial to
+Matter in Different Degrees – and this Integrates Matter into our Karma.
+
+•
+
+It’s Model is not directly perceivable by Human Senses – as you go into Philosophy of Five
+Elements, and even it’s Spiritual Cognition, cognition with Higher Senses – which can well
+be projections of patterns human senses and more advanced brain structures form in relation
+to matter, and are able to project into our sensory systems for fast and complete processing,
+which does not need so much separate Attention, thus system with Encoder and Decoder
+within Human Brain, in Language of Nerver Adding Dimensions to Sensory Perception –
+sense of such Magic Blue as Alchemy over Matter, it’s not the same with natural Blue Color
+– this Vibration is Complex Brain Structure Hologram Image(?) or other structural form, but
+the Blue in it’s simplest value is only a Linear Frequency – or one point in Human Color
+Space, in three or four dimensions. Such is a linear frequency – what we create in relation to
+matter, is network of complex senses like beauty and ugliness, pleasure and displeasure,
+around the senses of this matter – 5 elements are so natural that they have fast and efficient
+projections to all senses; so our sense-information, finally, can directly perceive Matter as
+we Sense, and do some Processing with these Senses. Alternatively, it’s about Brain directly
+getting such Hologram of Matter – with even more subtle senses ..but by perception, we
+cannot say which is which, for this we might need to study Mind and Body. For our Senses –
+we can bring together senses of Matter Acting upon Us, and We Acting upon Matter. This is
+our Unconscious Action Towards Matter, this is our Awareness of Properties, and this is our
+Direct Manifestation Ability – the theory, naturally, is like General Ethics to Religion: it’s
+not very different depending on which hypotheses are real for us, or which one we can
+already Verify with our Senses and Machines. Building Good Karma Towards Matter, and
+it’s Good Karma Towards Us, which is also it’s Higher Pleasure of Being a Matter – this
+creates a Positive Karma, involving Matter as Principle into the Dynamics of our Karma;
+thus, we can achieve something Capable of Occasional Miracles towards Matter. I have been
+inside those Occasional Miracles and on All Levels of Structure, they can grow Large – just
+to give us also periods of Anti-Miracles as it’s Polar Integral, for us to Learn to Cope with
+Matter and High Matter – the Tendency of Humans to also behave like Materials, keeping
+the Material Qualities of Life, for example Helping Others so that Material Structures of
+Society Itself form – like the Offices, which give you Material Stability and Professional
+Service, which acts like Matter; whereas Creation comes from outside, or Ego, which is the
+Material Part of us – it keeps it’s Structure, while After Death, where Ego is not There – the
+Structure of our Soul is Much Harder to Keep; there we need Even Higher Matter to keep
+our minds Stable and not Manifesting Random Reality, like Mind can do – being only
+Creative (Mind), not Stable (Matter). Matter, Slowly, burns in Fire and is destroyed
+eventually by Electricity – thus it’s Changes, and this is a Negative Creation for it, or
+Destruction of Old Things. We can Sense Destruction and Creation in these Processes, and
+thus know what the Matter is Actually Feelings. (We need Alternative to Truth Value Tables
+as well here!)
+
+http://spireason.neocities.org/
+
+
