@@ -1,0 +1,11 @@
+=== Converter run started ===
+Scanning R folder: 0.5
+Scanning R folder: 1
+Scanning R folder: 2
+Scanning R folder: 3
+Scanning R folder: 4
+Wrote boundaries.json
+Wrote boundaries.md
+Wrote gen_record.md
+Wrote README.md
+=== Converter run finished ===

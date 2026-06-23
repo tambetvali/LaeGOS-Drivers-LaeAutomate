@@ -1,0 +1,5 @@
+Each folder here is the stub placeholder to reflect where they really are:
+- The folders 0.5, 1, 2, 3, 4 exist with full content and not just placeholders (you could replace them with links or shortcuts to folders, or virtual images in http server, or just copy the full content here if you want to waste space): [numbers](../numbers/) has the actual files you seek inside.
+- Folders imaginarly represent that this type of files is exactly the single-number registry right now.
+
+This might change as I choose a "simpler" and "more complex", separate models in this part, or if you copy the longer models to specific contexts - in each case, AI will need to learn more, altough it will have more examples to train. This is not very competent code of me, altough: the full short code is [https://github.com/tambetvali/LaeLane/tree/main/LaneDatums/LaneCounterSC5](https://github.com/tambetvali/LaeLane/tree/main/LaneDatums/LaneCounterSC5), carefully crafted without an AI - to give an AI the strict specification of what I mean in my rather playful, not even always formal, texts about such number types and how they convert to Lanes.

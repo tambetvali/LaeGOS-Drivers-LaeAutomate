@@ -1,0 +1,19 @@
+{
+    "R": "2",
+    "WidthSquares": 2,
+    "HeightSquares": 17,
+    "Points": [
+        {
+            "i": 0,
+            "j": 9,
+            "x_center": 1.5,
+            "y_center": 1.5
+        },
+        {
+            "i": 1,
+            "j": 11,
+            "x_center": 2.5,
+            "y_center": 3.5
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+=== Converter run started ===
+Scanning R folder: 0.5
+  WARNING: folder 0.5 does not exist, skipping
+Scanning R folder: 1
+  WARNING: folder 1 does not exist, skipping
+Scanning R folder: 2
+  WARNING: folder 2 does not exist, skipping
+Scanning R folder: 3
+  WARNING: folder 3 does not exist, skipping
+Scanning R folder: 4
+  WARNING: folder 4 does not exist, skipping
+Wrote boundaries.json
+Wrote boundaries.md
+Wrote gen_record.md
+Wrote README.md
+=== Converter run finished ===

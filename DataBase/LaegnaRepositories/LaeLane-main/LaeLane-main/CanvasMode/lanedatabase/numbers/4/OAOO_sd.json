@@ -1,0 +1,31 @@
+{
+    "R": "4",
+    "WidthSquares": 8,
+    "HeightSquares": 257,
+    "Points": [
+        {
+            "i": 0,
+            "j": 127,
+            "x_center": 1.5,
+            "y_center": -0.5
+        },
+        {
+            "i": 1,
+            "j": 126,
+            "x_center": 2.5,
+            "y_center": -1.5
+        },
+        {
+            "i": 3,
+            "j": 117,
+            "x_center": 4.5,
+            "y_center": -10.5
+        },
+        {
+            "i": 7,
+            "j": 75,
+            "x_center": 8.5,
+            "y_center": -52.5
+        }
+    ]
+}

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="4cm" height="65cm" viewBox="1 -32 4 65"><rect x="1" y="-32" width="4" height="65" fill="white" /><path d="M 0 32 L 1 31 L 2 30" stroke="black" fill="none" stroke-width="1" /><path d="M 2 30 L 2 29 L 2 28 L 3 27 L 3 26 L 3 25 L 3 24 L 3 23 L 4 22 L 4 21 L 4 20" stroke="black" fill="none" stroke-width="1" /><circle cx="0" cy="32" r="1" fill="black" /><circle cx="2" cy="30" r="1" fill="black" /><circle cx="4" cy="20" r="1" fill="black" /></svg>

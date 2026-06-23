@@ -1,0 +1,3 @@
+Each folder here is the stub placeholder to reflect where they really are:
+- The folders 0.5, 1, 2, 3, 4 exist with full content and not just placeholders (you could replace them with links or shortcuts to folders, or virtual images in http server, or just copy the full content here if you want to waste space): [numbers](../numbers/) has the actual files you seek inside.
+- Folders imaginarly represent that this type of files is exactly the single-number registry right now.
