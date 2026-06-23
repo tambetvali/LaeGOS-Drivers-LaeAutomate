@@ -1,0 +1,1 @@
+Because the AI should not do very recursive, deep search, we are happy with this home part of the database - it's actual, very complete laegna spireason's tautological intro with some added resources of it's own.

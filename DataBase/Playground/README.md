@@ -1,0 +1,1 @@
+Playground is folder from spireason.neocities.org responsible of sheep counting and simulation of number systems. This helps to understand, what is contained in json and other data files, by how they have been read and displayed.
