@@ -23,12 +23,12 @@ for r in Rs:
 data["axes"] = laeaxes.axes
 datacanvas["ranges"] = laeranges.ranges
 
-if not os.path.exists("lanedatabase"):
-    os.mkdir("lanedatabase")
+if not os.path.exists("gosdb"):
+    os.mkdir("gosdb")
 
-with open("lanedatabase/lanes.json", "w") as f:
+with open("gosdb/lanes.json", "w") as f:
     json.dump(data, f, indent=4)  # indent for pretty formatting
 
-with open("lanedatabase/canvas.json", "w") as f:
+with open("gosdb/canvas.json", "w") as f:
     json.dump(datacanvas, f, indent=4)  # indent for pretty formatting
 
