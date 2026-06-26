@@ -1,3 +1,33 @@
+##### LaneCounterSC5N
+
+*This folder*: "***LaneCounterSC5N***";
+- Part of LaeGOS, "Laegna Logex" - this "x" means it's automata, not abstract math, and SC5N is normalized to tile size (square, even) and precision (linear, altough, as you wish, but with exponent precision you can perfectly map the exponent growth without "jumping up", which is rather a syndrome of actual infinity in your projected space).
+
+This folder here will be definitely arranged to automata: LaeGOS-Widgets is going to use files, databases and drivers from here, so *if you want it's functionality without user interface and it's full logic*, the structure appears here - not all folders here are copied as part of LaneCounterSC5N, but only the actual database files with their one-liner field descriptions.
+
+##### LaneCounterSC5
+
+***[LaneDatums:LaneCounterSC5](DataBase/LaegnaRepositories/LaeLane-main/LaeLane-main/LaneDatums/LaneCounterSC5)*** / [LaeLane:LaneCounterSC5](https://github.com/tambetvali/LaeLane/tree/main/LaneDatums/LaneCounterSC5): linexp drawings, metaphor logecs and math.
+
+# LaneCounterSC5N
+
+***This folder***: if you remove unnecessary files for this main component, and put it into **folder** of another project, it's **normalized name** alone would be "***LaneCounterSC5N***", not "LaeGOS-Drivers-LaeAutomate" which is long and less specific as folder name (repository names are the unique few along with central files and texts, to appear rather artistic, unique, than defining and understandable solely based on name - they would repeat if they were mere synonyms, such as calling "Windows" an "Operating System" in your text - we want to identify this uniqueness, and Art is closest to Natural Unique - not repeated, subtle, somewhat random, a good hash to uniquely identify name-category or name-country etc. combinations - name and fond style of logo of my school or corporation, where uniqueness is more guaranteed and thus, names more general).
+
+***[LaneDatums:LaneCounterSC5](DataBase/LaegnaRepositories/LaeLane-main/LaeLane-main/LaneDatums/LaneCounterSC5)*** is the initial version: it starts counting from linear order, which means order is one "octave" down - signed range is $2 ^{n-1}$ and unsigned range is $2^n$, which means it's divided by two - dividing by two, in music theory, is going one Octave down, and the word "Octave" is basically exponent 2 in base-2 system of counting, while "Exponent" is used, I use even "Acceleration", but they need both exponentiation number and base to be given as arguments and types; "Octave" makes sure the interlact between counts of 2 are known and aligned through all models, where "frequency" and "octave" are rather universal properties than appear in local contexts - they do not contradict themselves, being aligned axes as in base-2 and base-4 systems.
+
+LaeGOS gained development importance:
+
+***LaneCounterSC5N*** is the codename for this, normally I still say SC5 because who cares:
+- It has the same ranges $2^n$ and $2^{n+1}$ respectively, which means *they are moved exactly one octave right at axis X* - because that axis exists on exponential scale and is counted by levels of 2, it equals to adding one digit precision.
+- This allows number indexing - it's numerically kind of incorrect if I use it, because number "1" should anchor where it becomes linear.
+- It's not incorrect if you understand that then, the lower part simply appears on log axis, making the linear part seem exponent, because if it's linear inside it's exponent outside, it *seems* exponent altough, to be the same functions - it's *just easily* and *not necessarily* actually projecting linear spaces.
+- This is also not incorrect: all mappings are numerically equal, because they are equal in regards to all operation symmetries, which are also interchanged and preserved if one is perfectly mapped to other and vice versa.
+  - So they seem "Normalized" ("N" in it's name).
+
+Notice that SC5 base-linear copy shows *exponent as extreme growth if it happens right when job is done, at first digit or scope*, while SC5N - moving it octave down, the pictures should be squares rather than recangles, or signed system consists of two squares (plus and minus); and exponent growth appears quite natural and basically, you have to move the linear function down to generate exponentiation of the latter part of function: notice that exponent and sum parts are *equal and balanced*, which means if exponent or long-term growth is also *numerically bigger* than linear growth to the same point in the same time: in Laegna system they are equal, or Exponent is twice larger fractal- and zoom- consistently.
+
+---
+
 I got more than 800 downloads for LaeGOS-Widgets one day and this changed my attitude as high expectation:
 - My work was supposed to come back to LaeGOS circularly around, as it was immediately paused at iterations 0-1, metaphorically (because I am flow, I don't count them - every strategy matters at point acceleration, it's not always so Agile to count them literally: let's say, 3 hours one).
 - I felt I disappoint people if they have to wait two months before I am back to LaeGOS, and thus I switched from this separate LaeAutomate project to direct:
