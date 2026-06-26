@@ -164,10 +164,8 @@ class laerange:
 
         if yflip:
             if self.sign:
-                print(y, -y)
                 y = -y
             else:
-                print(y, self.getPixelHeight(), self.getPixelHeight() - y)
                 y = self.getPixelHeight() - y
         
         x = x - 0.5
@@ -521,3 +519,11 @@ class laenumCanvas:
     def draw(self, s, t):
         CD = self.CD[s + t]
         points = self.laen.generatePoints()
+
+def cleanlanecache():
+    global laeranges, laeaxes
+
+    # Growing singletons
+    laeranges = Laeranges()
+    laeaxes = Laeaxes()
+    return laeaxes, laeranges

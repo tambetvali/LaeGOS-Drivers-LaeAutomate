@@ -3,7 +3,9 @@ import json
 import os
 
 def generate(Rs, folder):
-    global R
+    global R, laeaxes, laeranges
+
+    laeaxes, laeranges = cleanlanecache()
 
     data = {
         "axes": {},
@@ -37,7 +39,7 @@ def generate(Rs, folder):
 
     with open(folder + "/canvas.json", "w") as f:
         json.dump(datacanvas, f, indent=4)  # indent for pretty formatting
-    
+
 Rs = [0.5, 1, 2, 3, 4]
 generate(Rs, "gosdb")
 
