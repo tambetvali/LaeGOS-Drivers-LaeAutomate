@@ -309,23 +309,23 @@ class laenum:
             Point["Ten"]["Signed"] = {}
             Point["Ten"]["Signed"]["SrcAxeY"] = self.axes.SignedAxeTenYstr(num)
             Point["Ten"]["Signed"]["SrcY"] = self.axes.SignedAxeTenYpnt(num, point)
-            Point["Ten"]["Signed"]["X"] = 2**num
+            Point["Ten"]["Signed"]["X"] = 4**(num - 0.5)
             Point["Ten"]["Signed"]["Y"] = self.axes.SignedAxeLaeY(num, point)
             Point["Ten"]["UnSigned"] = {}
             Point["Ten"]["UnSigned"]["SrcAxeY"] = self.axes.UnSignedAxeTenYstr(num)
             Point["Ten"]["UnSigned"]["SrcY"] = self.axes.UnSignedAxeTenYpnt(num, point)
-            Point["Ten"]["UnSigned"]["X"] = 2**(num + 1)
+            Point["Ten"]["UnSigned"]["X"] = 4**(num)
             Point["Ten"]["UnSigned"]["Y"] = self.axes.UnSignedAxeLaeY(num, point)
             Point["Dec"] = {}
             Point["Dec"]["Signed"] = {}
             Point["Dec"]["Signed"]["SrcAxeY"] = self.axes.SignedAxeDecYstr(num)
             Point["Dec"]["Signed"]["SrcY"] = self.axes.SignedAxeDecYpnt(num, point)
-            Point["Dec"]["Signed"]["X"] = 2**num
+            Point["Dec"]["Signed"]["X"] = 4**(num - 0.5)
             Point["Dec"]["Signed"]["Y"] = self.axes.SignedAxeDecY(num, point)
             Point["Dec"]["UnSigned"] = {}
             Point["Dec"]["UnSigned"]["SrcAxeY"] = self.axes.UnSignedAxeDecYstr(num)
             Point["Dec"]["UnSigned"]["SrcY"] = self.axes.UnSignedAxeDecYpnt(num, point)
-            Point["Dec"]["UnSigned"]["X"] = 2**(num + 1)
+            Point["Dec"]["UnSigned"]["X"] = 4**(num)
             Point["Dec"]["UnSigned"]["Y"] = self.axes.UnSignedAxeDecY(num, point)
 
             points[Point["Id"]] = Point

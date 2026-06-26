@@ -18,7 +18,8 @@ This folder here will be definitely arranged to automata: LaeGOS-Widgets is goin
 LaeGOS gained development importance:
 
 ***LaneCounterSC5N*** is the codename for this, normally I still say SC5 because who cares:
-- It has the same ranges $2^n$ and $2^{n+1}$ respectively, which means *they are moved exactly one octave right at axis X* - because that axis exists on exponential scale and is counted by levels of 2, it equals to adding one digit precision.
+- It has the same ranges $4^{n - 0.5}$ and $4^n$ respectively, which means *they are moved exactly one octave right at axis X* - because that axis exists on exponential scale and is counted by levels of 2, it equals to adding one digit precision.
+- Projection is true to form square curves, altough + and - squares together give a rectangle. I make calculus to pixel format manually to correct errors.
 - This allows number indexing - it's numerically kind of incorrect if I use it, because number "1" should anchor where it becomes linear.
 - It's not incorrect if you understand that then, the lower part simply appears on log axis, making the linear part seem exponent, because if it's linear inside it's exponent outside, it *seems* exponent altough, to be the same functions - it's *just easily* and *not necessarily* actually projecting linear spaces.
 - This is also not incorrect: all mappings are numerically equal, because they are equal in regards to all operation symmetries, which are also interchanged and preserved if one is perfectly mapped to other and vice versa.
