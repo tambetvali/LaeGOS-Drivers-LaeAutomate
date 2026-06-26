@@ -128,10 +128,16 @@ class laerange:
     def getPixelCoords(self, X, Y, yflip = True):
         # R, dimension, counts positively
         x = X
+        y = Y
 
+        if yflip:
+            if self.sign:
+                y = -y
+            else:
+                y = self.getPixelHeight() - y
+        
         # T, value, counts based on sign
         if self.sign:
-            y = Y
             if y == 0:
                 raise ValueError("Zero won't exist w/o boundaries!")
             elif y < 0:
@@ -139,9 +145,6 @@ class laerange:
             y = y + self.size
         else:
             y = Y
-        
-        if yflip:
-            y = -y
         
         return (x, y)
 
@@ -157,20 +160,15 @@ class laerange:
     def getVectorCoords(self, X, Y, yflip = True):
         # R, dimension, counts positively
         x = X
+        y = Y
 
-        # T, value, counts based on sign
-        if self.sign:
-            y = Y
-            if y == 0:
-                raise ValueError("Zero won't exist w/o boundaries!")
-            elif y < 0:
-                y = y + 1
-            y = y + self.size
-        else:
-            y = Y
-        
         if yflip:
-            y = -y
+            if self.sign:
+                print(y, -y)
+                y = -y
+            else:
+                print(y, self.getPixelHeight(), self.getPixelHeight() - y)
+                y = self.getPixelHeight() - y
         
         x = x - 0.5
 
@@ -200,19 +198,19 @@ class Laeranges:
             rang = {}
           
             rng = laerange(R)
-            rng.setSize("UnSignedTen", math.floor(4**R), False)
+            rng.setSize("UnSignedTen", 2**(R*2), False)
             rang["UnSignedTen"] = rng
 
             rng = laerange(R)
-            rng.setSize("SignedTen", math.floor(4**(R - 0.5)), True)
+            rng.setSize("SignedTen", 2**(R*2 - 1), True)
             rang["SignedTen"] = rng
 
             rng = laerange(R)
-            rng.setSize("UnSignedDec", math.floor(4**(R)), True)
+            rng.setSize("UnSignedDec", 2**(R*2), True)
             rang["UnSignedDec"] = rng
 
             rng = laerange(R)
-            rng.setSize("SignedDec", math.floor(4**R - 0.5), False)
+            rng.setSize("SignedDec", 2**(R*2 - 1), False)
             rang["SignedDec"] = rng
 
             self.ranges[R] = rang
@@ -474,23 +472,23 @@ class laenum:
             Point["Ten"]["Signed"] = {}
             Point["Ten"]["Signed"]["SrcAxeY"] = self.axes.SignedAxeTenYstr(num)
             Point["Ten"]["Signed"]["SrcY"] = self.axes.SignedAxeTenYpnt(num, point)
-            Point["Ten"]["Signed"]["X"] = 4**(num - 0.5)
+            Point["Ten"]["Signed"]["X"] = 2**(2*num - 1)
             Point["Ten"]["Signed"]["Y"] = self.axes.SignedAxeLaeY(num, point)
             Point["Ten"]["UnSigned"] = {}
             Point["Ten"]["UnSigned"]["SrcAxeY"] = self.axes.UnSignedAxeTenYstr(num)
             Point["Ten"]["UnSigned"]["SrcY"] = self.axes.UnSignedAxeTenYpnt(num, point)
-            Point["Ten"]["UnSigned"]["X"] = 4**(num)
+            Point["Ten"]["UnSigned"]["X"] = 2**(2*num)
             Point["Ten"]["UnSigned"]["Y"] = self.axes.UnSignedAxeLaeY(num, point)
             Point["Dec"] = {}
             Point["Dec"]["Signed"] = {}
             Point["Dec"]["Signed"]["SrcAxeY"] = self.axes.SignedAxeDecYstr(num)
             Point["Dec"]["Signed"]["SrcY"] = self.axes.SignedAxeDecYpnt(num, point)
-            Point["Dec"]["Signed"]["X"] = 4**(num - 0.5)
+            Point["Dec"]["Signed"]["X"] = 2**(2*num - 1)
             Point["Dec"]["Signed"]["Y"] = self.axes.SignedAxeDecY(num, point)
             Point["Dec"]["UnSigned"] = {}
             Point["Dec"]["UnSigned"]["SrcAxeY"] = self.axes.UnSignedAxeDecYstr(num)
             Point["Dec"]["UnSigned"]["SrcY"] = self.axes.UnSignedAxeDecYpnt(num, point)
-            Point["Dec"]["UnSigned"]["X"] = 4**(num)
+            Point["Dec"]["UnSigned"]["X"] = 2**(2*num)
             Point["Dec"]["UnSigned"]["Y"] = self.axes.UnSignedAxeDecY(num, point)
 
             points[Point["Id"]] = Point

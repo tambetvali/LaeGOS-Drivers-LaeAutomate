@@ -2,40 +2,48 @@ from utilities import *
 import json
 import os
 
+def generate(Rs, folder):
+    global R
+
+    data = {
+        "axes": {},
+        "R": {}
+    }
+
+    datacanvas = {
+        "ranges": {},
+        "R": {}
+    }
+
+    for r in Rs:
+        data["R"][r] = {}
+        datacanvas["R"][r] = {}
+        for laen in R(r):
+            data["R"][r][laen.Lae4()] = laen.generatePoints()
+            datacanvas["R"][r][laen.Lae4()] = laen.generatePointsCanvas()
+
+    data["axes"] = laeaxes.axes
+
+    datacanvas["ranges"] = {}
+
+    for r in laeranges.ranges:
+        datacanvas["ranges"][r] = laeranges.simp(r)
+
+    if not os.path.exists(folder):
+        os.mkdir(folder)
+
+    with open(folder + "/lanes.json", "w") as f:
+        json.dump(data, f, indent=4)  # indent for pretty formatting
+
+    with open(folder + "/canvas.json", "w") as f:
+        json.dump(datacanvas, f, indent=4)  # indent for pretty formatting
+    
 Rs = [0.5, 1, 2, 3, 4]
+generate(Rs, "gosdb")
 
-data = {
-    "axes": {},
-    "R": {}
-}
+Rs = [0.5, 1, 2, 3]
+generate(Rs, "gosdb-small")
 
-datacanvas = {
-    "ranges": {},
-    "R": {}
-}
+Rs = [0.5, 1, 2]
+generate(Rs, "gosdb-mini")
 
-for r in Rs:
-    data["R"][r] = {}
-    datacanvas["R"][r] = {}
-    for laen in R(r):
-        data["R"][r][laen.Lae4()] = laen.generatePoints()
-        datacanvas["R"][r][laen.Lae4()] = laen.generatePointsCanvas()
-
-print(datacanvas["R"])
-
-data["axes"] = laeaxes.axes
-
-datacanvas["ranges"] = {}
-
-for R in laeranges.ranges:
-    datacanvas["ranges"][R] = laeranges.simp(R)
-
-if not os.path.exists("gosdb"):
-    os.mkdir("gosdb")
-
-with open("gosdb/lanes.json", "w") as f:
-    json.dump(data, f, indent=4)  # indent for pretty formatting
-
-with open("gosdb/canvas.json", "w") as f:
-    json.dump(datacanvas, f, indent=4)  # indent for pretty formatting
- 

@@ -1,0 +1,5686 @@
+{
+    "ranges": {
+        "0.5": {
+            "UnSignedTen": {
+                "R": 0.5,
+                "sign": false,
+                "size": 2.0,
+                "Impl": {
+                    "pixelWidth": 2.0,
+                    "pixelHeight": 2.0,
+                    "vectorWidth": 2.0,
+                    "vectorHeight": {
+                        "SizeSquare": 2.0,
+                        "Xminmax": [
+                            0,
+                            2.0
+                        ],
+                        "Yminmax": [
+                            0,
+                            2.0
+                        ]
+                    }
+                }
+            },
+            "SignedTen": {
+                "R": 0.5,
+                "sign": true,
+                "size": 1.0,
+                "Impl": {
+                    "pixelWidth": 1.0,
+                    "pixelHeight": 2.0,
+                    "vectorWidth": 1.0,
+                    "vectorHeight": {
+                        "SizeRect": [
+                            1.0,
+                            2.0
+                        ],
+                        "Xminmax": [
+                            0,
+                            1.0
+                        ],
+                        "Yminmax": [
+                            -1.0,
+                            1.0
+                        ]
+                    }
+                }
+            },
+            "UnSignedDec": {
+                "R": 0.5,
+                "sign": true,
+                "size": 2.0,
+                "Impl": {
+                    "pixelWidth": 2.0,
+                    "pixelHeight": 4.0,
+                    "vectorWidth": 2.0,
+                    "vectorHeight": {
+                        "SizeRect": [
+                            2.0,
+                            4.0
+                        ],
+                        "Xminmax": [
+                            0,
+                            2.0
+                        ],
+                        "Yminmax": [
+                            -2.0,
+                            2.0
+                        ]
+                    }
+                }
+            },
+            "SignedDec": {
+                "R": 0.5,
+                "sign": false,
+                "size": 1.0,
+                "Impl": {
+                    "pixelWidth": 1.0,
+                    "pixelHeight": 1.0,
+                    "vectorWidth": 1.0,
+                    "vectorHeight": {
+                        "SizeSquare": 1.0,
+                        "Xminmax": [
+                            0,
+                            1.0
+                        ],
+                        "Yminmax": [
+                            0,
+                            1.0
+                        ]
+                    }
+                }
+            }
+        },
+        "1": {
+            "UnSignedTen": {
+                "R": 1,
+                "sign": false,
+                "size": 4,
+                "Impl": {
+                    "pixelWidth": 4,
+                    "pixelHeight": 4,
+                    "vectorWidth": 4,
+                    "vectorHeight": {
+                        "SizeSquare": 4,
+                        "Xminmax": [
+                            0,
+                            4
+                        ],
+                        "Yminmax": [
+                            0,
+                            4
+                        ]
+                    }
+                }
+            },
+            "SignedTen": {
+                "R": 1,
+                "sign": true,
+                "size": 2,
+                "Impl": {
+                    "pixelWidth": 2,
+                    "pixelHeight": 4,
+                    "vectorWidth": 2,
+                    "vectorHeight": {
+                        "SizeRect": [
+                            2,
+                            4
+                        ],
+                        "Xminmax": [
+                            0,
+                            2
+                        ],
+                        "Yminmax": [
+                            -2,
+                            2
+                        ]
+                    }
+                }
+            },
+            "UnSignedDec": {
+                "R": 1,
+                "sign": true,
+                "size": 4,
+                "Impl": {
+                    "pixelWidth": 4,
+                    "pixelHeight": 8,
+                    "vectorWidth": 4,
+                    "vectorHeight": {
+                        "SizeRect": [
+                            4,
+                            8
+                        ],
+                        "Xminmax": [
+                            0,
+                            4
+                        ],
+                        "Yminmax": [
+                            -4,
+                            4
+                        ]
+                    }
+                }
+            },
+            "SignedDec": {
+                "R": 1,
+                "sign": false,
+                "size": 2,
+                "Impl": {
+                    "pixelWidth": 2,
+                    "pixelHeight": 2,
+                    "vectorWidth": 2,
+                    "vectorHeight": {
+                        "SizeSquare": 2,
+                        "Xminmax": [
+                            0,
+                            2
+                        ],
+                        "Yminmax": [
+                            0,
+                            2
+                        ]
+                    }
+                }
+            }
+        },
+        "2": {
+            "UnSignedTen": {
+                "R": 2,
+                "sign": false,
+                "size": 16,
+                "Impl": {
+                    "pixelWidth": 16,
+                    "pixelHeight": 16,
+                    "vectorWidth": 16,
+                    "vectorHeight": {
+                        "SizeSquare": 16,
+                        "Xminmax": [
+                            0,
+                            16
+                        ],
+                        "Yminmax": [
+                            0,
+                            16
+                        ]
+                    }
+                }
+            },
+            "SignedTen": {
+                "R": 2,
+                "sign": true,
+                "size": 8,
+                "Impl": {
+                    "pixelWidth": 8,
+                    "pixelHeight": 16,
+                    "vectorWidth": 8,
+                    "vectorHeight": {
+                        "SizeRect": [
+                            8,
+                            16
+                        ],
+                        "Xminmax": [
+                            0,
+                            8
+                        ],
+                        "Yminmax": [
+                            -8,
+                            8
+                        ]
+                    }
+                }
+            },
+            "UnSignedDec": {
+                "R": 2,
+                "sign": true,
+                "size": 16,
+                "Impl": {
+                    "pixelWidth": 16,
+                    "pixelHeight": 32,
+                    "vectorWidth": 16,
+                    "vectorHeight": {
+                        "SizeRect": [
+                            16,
+                            32
+                        ],
+                        "Xminmax": [
+                            0,
+                            16
+                        ],
+                        "Yminmax": [
+                            -16,
+                            16
+                        ]
+                    }
+                }
+            },
+            "SignedDec": {
+                "R": 2,
+                "sign": false,
+                "size": 8,
+                "Impl": {
+                    "pixelWidth": 8,
+                    "pixelHeight": 8,
+                    "vectorWidth": 8,
+                    "vectorHeight": {
+                        "SizeSquare": 8,
+                        "Xminmax": [
+                            0,
+                            8
+                        ],
+                        "Yminmax": [
+                            0,
+                            8
+                        ]
+                    }
+                }
+            }
+        },
+        "3": {
+            "UnSignedTen": {
+                "R": 3,
+                "sign": false,
+                "size": 64,
+                "Impl": {
+                    "pixelWidth": 64,
+                    "pixelHeight": 64,
+                    "vectorWidth": 64,
+                    "vectorHeight": {
+                        "SizeSquare": 64,
+                        "Xminmax": [
+                            0,
+                            64
+                        ],
+                        "Yminmax": [
+                            0,
+                            64
+                        ]
+                    }
+                }
+            },
+            "SignedTen": {
+                "R": 3,
+                "sign": true,
+                "size": 32,
+                "Impl": {
+                    "pixelWidth": 32,
+                    "pixelHeight": 64,
+                    "vectorWidth": 32,
+                    "vectorHeight": {
+                        "SizeRect": [
+                            32,
+                            64
+                        ],
+                        "Xminmax": [
+                            0,
+                            32
+                        ],
+                        "Yminmax": [
+                            -32,
+                            32
+                        ]
+                    }
+                }
+            },
+            "UnSignedDec": {
+                "R": 3,
+                "sign": true,
+                "size": 64,
+                "Impl": {
+                    "pixelWidth": 64,
+                    "pixelHeight": 128,
+                    "vectorWidth": 64,
+                    "vectorHeight": {
+                        "SizeRect": [
+                            64,
+                            128
+                        ],
+                        "Xminmax": [
+                            0,
+                            64
+                        ],
+                        "Yminmax": [
+                            -64,
+                            64
+                        ]
+                    }
+                }
+            },
+            "SignedDec": {
+                "R": 3,
+                "sign": false,
+                "size": 32,
+                "Impl": {
+                    "pixelWidth": 32,
+                    "pixelHeight": 32,
+                    "vectorWidth": 32,
+                    "vectorHeight": {
+                        "SizeSquare": 32,
+                        "Xminmax": [
+                            0,
+                            32
+                        ],
+                        "Yminmax": [
+                            0,
+                            32
+                        ]
+                    }
+                }
+            }
+        },
+        "4": {
+            "UnSignedTen": {
+                "R": 4,
+                "sign": false,
+                "size": 256,
+                "Impl": {
+                    "pixelWidth": 256,
+                    "pixelHeight": 256,
+                    "vectorWidth": 256,
+                    "vectorHeight": {
+                        "SizeSquare": 256,
+                        "Xminmax": [
+                            0,
+                            256
+                        ],
+                        "Yminmax": [
+                            0,
+                            256
+                        ]
+                    }
+                }
+            },
+            "SignedTen": {
+                "R": 4,
+                "sign": true,
+                "size": 128,
+                "Impl": {
+                    "pixelWidth": 128,
+                    "pixelHeight": 256,
+                    "vectorWidth": 128,
+                    "vectorHeight": {
+                        "SizeRect": [
+                            128,
+                            256
+                        ],
+                        "Xminmax": [
+                            0,
+                            128
+                        ],
+                        "Yminmax": [
+                            -128,
+                            128
+                        ]
+                    }
+                }
+            },
+            "UnSignedDec": {
+                "R": 4,
+                "sign": true,
+                "size": 256,
+                "Impl": {
+                    "pixelWidth": 256,
+                    "pixelHeight": 512,
+                    "vectorWidth": 256,
+                    "vectorHeight": {
+                        "SizeRect": [
+                            256,
+                            512
+                        ],
+                        "Xminmax": [
+                            0,
+                            256
+                        ],
+                        "Yminmax": [
+                            -256,
+                            256
+                        ]
+                    }
+                }
+            },
+            "SignedDec": {
+                "R": 4,
+                "sign": false,
+                "size": 128,
+                "Impl": {
+                    "pixelWidth": 128,
+                    "pixelHeight": 128,
+                    "vectorWidth": 128,
+                    "vectorHeight": {
+                        "SizeSquare": 128,
+                        "Xminmax": [
+                            0,
+                            128
+                        ],
+                        "Yminmax": [
+                            0,
+                            128
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "R": {
+        "0.5": {
+            "I": {
+                "R": 0.5,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 0.5,
+                            "sign": false,
+                            "size": 2.0,
+                            "Impl": {
+                                "pixelWidth": 2.0,
+                                "pixelHeight": 2.0,
+                                "vectorWidth": 2.0,
+                                "vectorHeight": {
+                                    "SizeSquare": 2.0,
+                                    "Xminmax": [
+                                        0,
+                                        2.0
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        2.0
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 0.5,
+                            "sign": true,
+                            "size": 1.0,
+                            "Impl": {
+                                "pixelWidth": 1.0,
+                                "pixelHeight": 2.0,
+                                "vectorWidth": 1.0,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        1.0,
+                                        2.0
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        1.0
+                                    ],
+                                    "Yminmax": [
+                                        -1.0,
+                                        1.0
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 0.5,
+                            "sign": true,
+                            "size": 2.0,
+                            "Impl": {
+                                "pixelWidth": 2.0,
+                                "pixelHeight": 4.0,
+                                "vectorWidth": 2.0,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        2.0,
+                                        4.0
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        2.0
+                                    ],
+                                    "Yminmax": [
+                                        -2.0,
+                                        2.0
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 0.5,
+                            "sign": false,
+                            "size": 1.0,
+                            "Impl": {
+                                "pixelWidth": 1.0,
+                                "pixelHeight": 1.0,
+                                "vectorWidth": 1.0,
+                                "vectorHeight": {
+                                    "SizeSquare": 1.0,
+                                    "Xminmax": [
+                                        0,
+                                        1.0
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        1.0
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        1
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        0.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        3.0
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        1.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        2.0
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -0.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -2
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        2.5
+                    ]
+                ]
+            },
+            "E": {
+                "R": 0.5,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 0.5,
+                            "sign": false,
+                            "size": 2.0,
+                            "Impl": {
+                                "pixelWidth": 2.0,
+                                "pixelHeight": 2.0,
+                                "vectorWidth": 2.0,
+                                "vectorHeight": {
+                                    "SizeSquare": 2.0,
+                                    "Xminmax": [
+                                        0,
+                                        2.0
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        2.0
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 0.5,
+                            "sign": true,
+                            "size": 1.0,
+                            "Impl": {
+                                "pixelWidth": 1.0,
+                                "pixelHeight": 2.0,
+                                "vectorWidth": 1.0,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        1.0,
+                                        2.0
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        1.0
+                                    ],
+                                    "Yminmax": [
+                                        -1.0,
+                                        1.0
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 0.5,
+                            "sign": true,
+                            "size": 2.0,
+                            "Impl": {
+                                "pixelWidth": 2.0,
+                                "pixelHeight": 4.0,
+                                "vectorWidth": 2.0,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        2.0,
+                                        4.0
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        2.0
+                                    ],
+                                    "Yminmax": [
+                                        -2.0,
+                                        2.0
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 0.5,
+                            "sign": false,
+                            "size": 1.0,
+                            "Impl": {
+                                "pixelWidth": 1.0,
+                                "pixelHeight": 1.0,
+                                "vectorWidth": 1.0,
+                                "vectorHeight": {
+                                    "SizeSquare": 1.0,
+                                    "Xminmax": [
+                                        0,
+                                        1.0
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        1.0
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        4
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        -1.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        0.0
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -1.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        -1.0
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -3.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        2
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        -0.5
+                    ]
+                ]
+            }
+        },
+        "1": {
+            "I": {
+                "R": 1,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 1,
+                            "sign": false,
+                            "size": 4,
+                            "Impl": {
+                                "pixelWidth": 4,
+                                "pixelHeight": 4,
+                                "vectorWidth": 4,
+                                "vectorHeight": {
+                                    "SizeSquare": 4,
+                                    "Xminmax": [
+                                        0,
+                                        4
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        4
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 1,
+                            "sign": true,
+                            "size": 2,
+                            "Impl": {
+                                "pixelWidth": 2,
+                                "pixelHeight": 4,
+                                "vectorWidth": 2,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        2,
+                                        4
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        2
+                                    ],
+                                    "Yminmax": [
+                                        -2,
+                                        2
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 1,
+                            "sign": true,
+                            "size": 4,
+                            "Impl": {
+                                "pixelWidth": 4,
+                                "pixelHeight": 8,
+                                "vectorWidth": 4,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        4,
+                                        8
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        4
+                                    ],
+                                    "Yminmax": [
+                                        -4,
+                                        4
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 1,
+                            "sign": false,
+                            "size": 2,
+                            "Impl": {
+                                "pixelWidth": 2,
+                                "pixelHeight": 2,
+                                "vectorWidth": 2,
+                                "vectorHeight": {
+                                    "SizeSquare": 2,
+                                    "Xminmax": [
+                                        0,
+                                        2
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        2
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        1
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        2.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        4
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        1.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        4
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -0.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -2
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        3.5
+                    ]
+                ]
+            },
+            "O": {
+                "R": 1,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 1,
+                            "sign": false,
+                            "size": 4,
+                            "Impl": {
+                                "pixelWidth": 4,
+                                "pixelHeight": 4,
+                                "vectorWidth": 4,
+                                "vectorHeight": {
+                                    "SizeSquare": 4,
+                                    "Xminmax": [
+                                        0,
+                                        4
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        4
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 1,
+                            "sign": true,
+                            "size": 2,
+                            "Impl": {
+                                "pixelWidth": 2,
+                                "pixelHeight": 4,
+                                "vectorWidth": 2,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        2,
+                                        4
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        2
+                                    ],
+                                    "Yminmax": [
+                                        -2,
+                                        2
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 1,
+                            "sign": true,
+                            "size": 4,
+                            "Impl": {
+                                "pixelWidth": 4,
+                                "pixelHeight": 8,
+                                "vectorWidth": 4,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        4,
+                                        8
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        4
+                                    ],
+                                    "Yminmax": [
+                                        -4,
+                                        4
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 1,
+                            "sign": false,
+                            "size": 2,
+                            "Impl": {
+                                "pixelWidth": 2,
+                                "pixelHeight": 2,
+                                "vectorWidth": 2,
+                                "vectorHeight": {
+                                    "SizeSquare": 2,
+                                    "Xminmax": [
+                                        0,
+                                        2
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        2
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        2
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        1.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        3
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        0.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        3
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -1.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -1
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        2.5
+                    ]
+                ]
+            },
+            "A": {
+                "R": 1,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 1,
+                            "sign": false,
+                            "size": 4,
+                            "Impl": {
+                                "pixelWidth": 4,
+                                "pixelHeight": 4,
+                                "vectorWidth": 4,
+                                "vectorHeight": {
+                                    "SizeSquare": 4,
+                                    "Xminmax": [
+                                        0,
+                                        4
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        4
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 1,
+                            "sign": true,
+                            "size": 2,
+                            "Impl": {
+                                "pixelWidth": 2,
+                                "pixelHeight": 4,
+                                "vectorWidth": 2,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        2,
+                                        4
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        2
+                                    ],
+                                    "Yminmax": [
+                                        -2,
+                                        2
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 1,
+                            "sign": true,
+                            "size": 4,
+                            "Impl": {
+                                "pixelWidth": 4,
+                                "pixelHeight": 8,
+                                "vectorWidth": 4,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        4,
+                                        8
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        4
+                                    ],
+                                    "Yminmax": [
+                                        -4,
+                                        4
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 1,
+                            "sign": false,
+                            "size": 2,
+                            "Impl": {
+                                "pixelWidth": 2,
+                                "pixelHeight": 2,
+                                "vectorWidth": 2,
+                                "vectorHeight": {
+                                    "SizeSquare": 2,
+                                    "Xminmax": [
+                                        0,
+                                        2
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        2
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        3
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        0.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        2
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -0.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        2
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -2.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        1
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        0.5
+                    ]
+                ]
+            },
+            "E": {
+                "R": 1,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 1,
+                            "sign": false,
+                            "size": 4,
+                            "Impl": {
+                                "pixelWidth": 4,
+                                "pixelHeight": 4,
+                                "vectorWidth": 4,
+                                "vectorHeight": {
+                                    "SizeSquare": 4,
+                                    "Xminmax": [
+                                        0,
+                                        4
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        4
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 1,
+                            "sign": true,
+                            "size": 2,
+                            "Impl": {
+                                "pixelWidth": 2,
+                                "pixelHeight": 4,
+                                "vectorWidth": 2,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        2,
+                                        4
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        2
+                                    ],
+                                    "Yminmax": [
+                                        -2,
+                                        2
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 1,
+                            "sign": true,
+                            "size": 4,
+                            "Impl": {
+                                "pixelWidth": 4,
+                                "pixelHeight": 8,
+                                "vectorWidth": 4,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        4,
+                                        8
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        4
+                                    ],
+                                    "Yminmax": [
+                                        -4,
+                                        4
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 1,
+                            "sign": false,
+                            "size": 2,
+                            "Impl": {
+                                "pixelWidth": 2,
+                                "pixelHeight": 2,
+                                "vectorWidth": 2,
+                                "vectorHeight": {
+                                    "SizeSquare": 2,
+                                    "Xminmax": [
+                                        0,
+                                        2
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        2
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        4
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        0
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        1
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -1.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        1
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -3.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        2
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        0
+                    ]
+                ]
+            }
+        },
+        "2": {
+            "II": {
+                "R": 2,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 16,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeSquare": 16,
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 16,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        8,
+                                        16
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        -8,
+                                        8
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 32,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        16,
+                                        32
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        -16,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 8,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeSquare": 8,
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        8
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        1
+                    ],
+                    "to",
+                    [
+                        16,
+                        1
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        14.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        14.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        10
+                    ],
+                    "to",
+                    [
+                        8,
+                        16
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        1.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        7.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        16
+                    ],
+                    "to",
+                    [
+                        16,
+                        16
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -0.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        -0.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -2
+                    ],
+                    "to",
+                    [
+                        8,
+                        -8
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        9.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        15.5
+                    ]
+                ],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        1
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        14.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        10
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        1.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        16
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -0.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -2
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        9.5
+                    ],
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        16,
+                        1
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        15.5,
+                        14.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        8,
+                        16
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        7.5,
+                        7.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        16,
+                        16
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        15.5,
+                        -0.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        8,
+                        -8
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        7.5,
+                        15.5
+                    ]
+                ]
+            },
+            "IO": {
+                "R": 2,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 16,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeSquare": 16,
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 16,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        8,
+                                        16
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        -8,
+                                        8
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 32,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        16,
+                                        32
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        -16,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 8,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeSquare": 8,
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        8
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        1
+                    ],
+                    "to",
+                    [
+                        16,
+                        2
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        14.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        13.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        10
+                    ],
+                    "to",
+                    [
+                        8,
+                        15
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        1.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        6.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        16
+                    ],
+                    "to",
+                    [
+                        16,
+                        15
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -0.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        -1.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -2
+                    ],
+                    "to",
+                    [
+                        8,
+                        -7
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        9.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        14.5
+                    ]
+                ],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        1
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        14.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        10
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        1.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        16
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -0.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -2
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        9.5
+                    ],
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        16,
+                        2
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        15.5,
+                        13.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        8,
+                        15
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        7.5,
+                        6.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        16,
+                        15
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        15.5,
+                        -1.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        8,
+                        -7
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        7.5,
+                        14.5
+                    ]
+                ]
+            },
+            "IA": {
+                "R": 2,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 16,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeSquare": 16,
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 16,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        8,
+                                        16
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        -8,
+                                        8
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 32,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        16,
+                                        32
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        -16,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 8,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeSquare": 8,
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        8
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        1
+                    ],
+                    "to",
+                    [
+                        16,
+                        3
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        14.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        12.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        10
+                    ],
+                    "to",
+                    [
+                        8,
+                        14
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        1.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        5.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        16
+                    ],
+                    "to",
+                    [
+                        16,
+                        12
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -0.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        -4.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -2
+                    ],
+                    "to",
+                    [
+                        8,
+                        -4
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        9.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        11.5
+                    ]
+                ],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        1
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        14.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        10
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        1.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        16
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -0.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -2
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        9.5
+                    ],
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        16,
+                        3
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        15.5,
+                        12.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        8,
+                        14
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        7.5,
+                        5.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        16,
+                        12
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        15.5,
+                        -4.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        8,
+                        -4
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        7.5,
+                        11.5
+                    ]
+                ]
+            },
+            "IE": {
+                "R": 2,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 16,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeSquare": 16,
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 16,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        8,
+                                        16
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        -8,
+                                        8
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 32,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        16,
+                                        32
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        -16,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 8,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeSquare": 8,
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        8
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        1
+                    ],
+                    "to",
+                    [
+                        16,
+                        4
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        14.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        11.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        10
+                    ],
+                    "to",
+                    [
+                        8,
+                        13
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        1.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        4.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        16
+                    ],
+                    "to",
+                    [
+                        16,
+                        11
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -0.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        -5.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -2
+                    ],
+                    "to",
+                    [
+                        8,
+                        -3
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        9.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        10.5
+                    ]
+                ],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        1
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        14.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        10
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        1.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        16
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -0.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -2
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        9.5
+                    ],
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        16,
+                        4
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        15.5,
+                        11.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        8,
+                        13
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        7.5,
+                        4.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        16,
+                        11
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        15.5,
+                        -5.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        8,
+                        -3
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        7.5,
+                        10.5
+                    ]
+                ]
+            },
+            "OI": {
+                "R": 2,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 16,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeSquare": 16,
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 16,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        8,
+                                        16
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        -8,
+                                        8
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 32,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        16,
+                                        32
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        -16,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 8,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeSquare": 8,
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        8
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        2
+                    ],
+                    "to",
+                    [
+                        16,
+                        5
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        13.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        10.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        9
+                    ],
+                    "to",
+                    [
+                        8,
+                        12
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        0.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        3.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        15
+                    ],
+                    "to",
+                    [
+                        16,
+                        14
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -1.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        -2.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -1
+                    ],
+                    "to",
+                    [
+                        8,
+                        -6
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        8.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        13.5
+                    ]
+                ],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        2
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        13.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        9
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        0.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        15
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -1.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -1
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        8.5
+                    ],
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        16,
+                        5
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        15.5,
+                        10.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        8,
+                        12
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        7.5,
+                        3.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        16,
+                        14
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        15.5,
+                        -2.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        8,
+                        -6
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        7.5,
+                        13.5
+                    ]
+                ]
+            },
+            "OO": {
+                "R": 2,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 16,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeSquare": 16,
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 16,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        8,
+                                        16
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        -8,
+                                        8
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 32,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        16,
+                                        32
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        -16,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 8,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeSquare": 8,
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        8
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        2
+                    ],
+                    "to",
+                    [
+                        16,
+                        6
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        13.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        9.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        9
+                    ],
+                    "to",
+                    [
+                        8,
+                        11
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        0.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        2.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        15
+                    ],
+                    "to",
+                    [
+                        16,
+                        13
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -1.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        -3.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -1
+                    ],
+                    "to",
+                    [
+                        8,
+                        -5
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        8.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        12.5
+                    ]
+                ],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        2
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        13.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        9
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        0.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        15
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -1.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -1
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        8.5
+                    ],
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        16,
+                        6
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        15.5,
+                        9.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        8,
+                        11
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        7.5,
+                        2.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        16,
+                        13
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        15.5,
+                        -3.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        8,
+                        -5
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        7.5,
+                        12.5
+                    ]
+                ]
+            },
+            "OA": {
+                "R": 2,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 16,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeSquare": 16,
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 16,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        8,
+                                        16
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        -8,
+                                        8
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 32,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        16,
+                                        32
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        -16,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 8,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeSquare": 8,
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        8
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        2
+                    ],
+                    "to",
+                    [
+                        16,
+                        7
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        13.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        8.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        9
+                    ],
+                    "to",
+                    [
+                        8,
+                        10
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        0.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        1.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        15
+                    ],
+                    "to",
+                    [
+                        16,
+                        10
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -1.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        -6.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -1
+                    ],
+                    "to",
+                    [
+                        8,
+                        -2
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        8.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        9.5
+                    ]
+                ],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        2
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        13.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        9
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        0.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        15
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -1.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -1
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        8.5
+                    ],
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        16,
+                        7
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        15.5,
+                        8.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        8,
+                        10
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        7.5,
+                        1.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        16,
+                        10
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        15.5,
+                        -6.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        8,
+                        -2
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        7.5,
+                        9.5
+                    ]
+                ]
+            },
+            "OE": {
+                "R": 2,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 16,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeSquare": 16,
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 16,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        8,
+                                        16
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        -8,
+                                        8
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 32,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        16,
+                                        32
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        -16,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 8,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeSquare": 8,
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        8
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        2
+                    ],
+                    "to",
+                    [
+                        16,
+                        8
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        13.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        7.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        9
+                    ],
+                    "to",
+                    [
+                        8,
+                        9
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        0.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        0.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        15
+                    ],
+                    "to",
+                    [
+                        16,
+                        9
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -1.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        -7.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -1
+                    ],
+                    "to",
+                    [
+                        8,
+                        -1
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        8.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        8.5
+                    ]
+                ],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        2
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        13.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        9
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        0.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        15
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -1.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        -1
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        8.5
+                    ],
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        16,
+                        8
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        15.5,
+                        7.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        8,
+                        9
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        7.5,
+                        0.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        16,
+                        9
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        15.5,
+                        -7.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        8,
+                        -1
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        7.5,
+                        8.5
+                    ]
+                ]
+            },
+            "AI": {
+                "R": 2,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 16,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeSquare": 16,
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 16,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        8,
+                                        16
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        -8,
+                                        8
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 32,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        16,
+                                        32
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        -16,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 8,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeSquare": 8,
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        8
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        3
+                    ],
+                    "to",
+                    [
+                        16,
+                        9
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        12.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        6.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        8
+                    ],
+                    "to",
+                    [
+                        8,
+                        8
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -0.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        -0.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        14
+                    ],
+                    "to",
+                    [
+                        16,
+                        8
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -2.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        -8.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        1
+                    ],
+                    "to",
+                    [
+                        8,
+                        1
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        6.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        6.5
+                    ]
+                ],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        3
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        12.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        8
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -0.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        14
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -2.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        1
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        6.5
+                    ],
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        16,
+                        9
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        15.5,
+                        6.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        8,
+                        8
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        7.5,
+                        -0.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        16,
+                        8
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        15.5,
+                        -8.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        8,
+                        1
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        7.5,
+                        6.5
+                    ]
+                ]
+            },
+            "AO": {
+                "R": 2,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 16,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeSquare": 16,
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 16,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        8,
+                                        16
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        -8,
+                                        8
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 32,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        16,
+                                        32
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        -16,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 8,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeSquare": 8,
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        8
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        3
+                    ],
+                    "to",
+                    [
+                        16,
+                        10
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        12.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        5.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        8
+                    ],
+                    "to",
+                    [
+                        8,
+                        7
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -0.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        -1.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        14
+                    ],
+                    "to",
+                    [
+                        16,
+                        7
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -2.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        -9.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        1
+                    ],
+                    "to",
+                    [
+                        8,
+                        2
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        6.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        5.5
+                    ]
+                ],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        3
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        12.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        8
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -0.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        14
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -2.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        1
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        6.5
+                    ],
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        16,
+                        10
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        15.5,
+                        5.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        8,
+                        7
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        7.5,
+                        -1.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        16,
+                        7
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        15.5,
+                        -9.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        8,
+                        2
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        7.5,
+                        5.5
+                    ]
+                ]
+            },
+            "AA": {
+                "R": 2,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 16,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeSquare": 16,
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 16,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        8,
+                                        16
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        -8,
+                                        8
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 32,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        16,
+                                        32
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        -16,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 8,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeSquare": 8,
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        8
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        3
+                    ],
+                    "to",
+                    [
+                        16,
+                        11
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        12.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        4.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        8
+                    ],
+                    "to",
+                    [
+                        8,
+                        6
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -0.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        -2.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        14
+                    ],
+                    "to",
+                    [
+                        16,
+                        4
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -2.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        -12.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        1
+                    ],
+                    "to",
+                    [
+                        8,
+                        5
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        6.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        2.5
+                    ]
+                ],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        3
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        12.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        8
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -0.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        14
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -2.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        1
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        6.5
+                    ],
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        16,
+                        11
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        15.5,
+                        4.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        8,
+                        6
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        7.5,
+                        -2.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        16,
+                        4
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        15.5,
+                        -12.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        8,
+                        5
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        7.5,
+                        2.5
+                    ]
+                ]
+            },
+            "AE": {
+                "R": 2,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 16,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeSquare": 16,
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 16,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        8,
+                                        16
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        -8,
+                                        8
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 32,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        16,
+                                        32
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        -16,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 8,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeSquare": 8,
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        8
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        3
+                    ],
+                    "to",
+                    [
+                        16,
+                        12
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        12.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        3.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        8
+                    ],
+                    "to",
+                    [
+                        8,
+                        5
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -0.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        -3.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        14
+                    ],
+                    "to",
+                    [
+                        16,
+                        3
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -2.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        -13.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        1
+                    ],
+                    "to",
+                    [
+                        8,
+                        6
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        6.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        1.5
+                    ]
+                ],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        3
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        12.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        8
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -0.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        14
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -2.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        1
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        6.5
+                    ],
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        16,
+                        12
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        15.5,
+                        3.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        8,
+                        5
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        7.5,
+                        -3.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        16,
+                        3
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        15.5,
+                        -13.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        8,
+                        6
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        7.5,
+                        1.5
+                    ]
+                ]
+            },
+            "EI": {
+                "R": 2,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 16,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeSquare": 16,
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 16,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        8,
+                                        16
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        -8,
+                                        8
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 32,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        16,
+                                        32
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        -16,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 8,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeSquare": 8,
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        8
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        4
+                    ],
+                    "to",
+                    [
+                        16,
+                        13
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        11.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        2.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        7
+                    ],
+                    "to",
+                    [
+                        8,
+                        4
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -1.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        -4.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        13
+                    ],
+                    "to",
+                    [
+                        16,
+                        6
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -3.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        -10.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        2
+                    ],
+                    "to",
+                    [
+                        8,
+                        3
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        5.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        4.5
+                    ]
+                ],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        4
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        11.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        7
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -1.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        13
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -3.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        2
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        5.5
+                    ],
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        16,
+                        13
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        15.5,
+                        2.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        8,
+                        4
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        7.5,
+                        -4.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        16,
+                        6
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        15.5,
+                        -10.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        8,
+                        3
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        7.5,
+                        4.5
+                    ]
+                ]
+            },
+            "EO": {
+                "R": 2,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 16,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeSquare": 16,
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 16,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        8,
+                                        16
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        -8,
+                                        8
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 32,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        16,
+                                        32
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        -16,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 8,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeSquare": 8,
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        8
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        4
+                    ],
+                    "to",
+                    [
+                        16,
+                        14
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        11.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        1.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        7
+                    ],
+                    "to",
+                    [
+                        8,
+                        3
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -1.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        -5.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        13
+                    ],
+                    "to",
+                    [
+                        16,
+                        5
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -3.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        -11.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        2
+                    ],
+                    "to",
+                    [
+                        8,
+                        4
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        5.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        3.5
+                    ]
+                ],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        4
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        11.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        7
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -1.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        13
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -3.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        2
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        5.5
+                    ],
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        16,
+                        14
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        15.5,
+                        1.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        8,
+                        3
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        7.5,
+                        -5.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        16,
+                        5
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        15.5,
+                        -11.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        8,
+                        4
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        7.5,
+                        3.5
+                    ]
+                ]
+            },
+            "EA": {
+                "R": 2,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 16,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeSquare": 16,
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 16,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        8,
+                                        16
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        -8,
+                                        8
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 32,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        16,
+                                        32
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        -16,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 8,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeSquare": 8,
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        8
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        4
+                    ],
+                    "to",
+                    [
+                        16,
+                        15
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        11.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        0.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        7
+                    ],
+                    "to",
+                    [
+                        8,
+                        2
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -1.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        -6.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        13
+                    ],
+                    "to",
+                    [
+                        16,
+                        2
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -3.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        -14.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        2
+                    ],
+                    "to",
+                    [
+                        8,
+                        7
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        5.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        0.5
+                    ]
+                ],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        4
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        11.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        7
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -1.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        13
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -3.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        2
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        5.5
+                    ],
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        16,
+                        15
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        15.5,
+                        0.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        8,
+                        2
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        7.5,
+                        -6.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        16,
+                        2
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        15.5,
+                        -14.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        8,
+                        7
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        7.5,
+                        0.5
+                    ]
+                ]
+            },
+            "EE": {
+                "R": 2,
+                "Range": [
+                    "Common",
+                    {
+                        "UnSignedTen": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 16,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeSquare": 16,
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedTen": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 16,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        8,
+                                        16
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        -8,
+                                        8
+                                    ]
+                                }
+                            }
+                        },
+                        "UnSignedDec": {
+                            "R": 2,
+                            "sign": true,
+                            "size": 16,
+                            "Impl": {
+                                "pixelWidth": 16,
+                                "pixelHeight": 32,
+                                "vectorWidth": 16,
+                                "vectorHeight": {
+                                    "SizeRect": [
+                                        16,
+                                        32
+                                    ],
+                                    "Xminmax": [
+                                        0,
+                                        16
+                                    ],
+                                    "Yminmax": [
+                                        -16,
+                                        16
+                                    ]
+                                }
+                            }
+                        },
+                        "SignedDec": {
+                            "R": 2,
+                            "sign": false,
+                            "size": 8,
+                            "Impl": {
+                                "pixelWidth": 8,
+                                "pixelHeight": 8,
+                                "vectorWidth": 8,
+                                "vectorHeight": {
+                                    "SizeSquare": 8,
+                                    "Xminmax": [
+                                        0,
+                                        8
+                                    ],
+                                    "Yminmax": [
+                                        0,
+                                        8
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "Background": [
+                    "Common",
+                    "White"
+                ],
+                "Foreground": [
+                    "Common",
+                    "Black"
+                ],
+                "Lines": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        4
+                    ],
+                    "to",
+                    [
+                        16,
+                        16
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        11.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        0
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        7
+                    ],
+                    "to",
+                    [
+                        8,
+                        1
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -1.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        -7.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        13
+                    ],
+                    "to",
+                    [
+                        16,
+                        1
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -3.5
+                    ],
+                    "to",
+                    [
+                        15.5,
+                        -15.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        2
+                    ],
+                    "to",
+                    [
+                        8,
+                        8
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        5.5
+                    ],
+                    "to",
+                    [
+                        7.5,
+                        0
+                    ]
+                ],
+                "Circles": [
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        4,
+                        4
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        3.5,
+                        11.5
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        2,
+                        7
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        1.5,
+                        -1.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        4,
+                        13
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        3.5,
+                        -3.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        2,
+                        2
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        1.5,
+                        5.5
+                    ],
+                    "Pixel\u21d2UnSignedTen",
+                    [
+                        16,
+                        16
+                    ],
+                    "Vector\u21d2UnSignedTen",
+                    [
+                        15.5,
+                        0
+                    ],
+                    "Pixel\u21d2SignedTen",
+                    [
+                        8,
+                        1
+                    ],
+                    "Vector\u21d2SignedTen",
+                    [
+                        7.5,
+                        -7.5
+                    ],
+                    "Pixel\u21d2UnSignedDec",
+                    [
+                        16,
+                        1
+                    ],
+                    "Vector\u21d2UnSignedDec",
+                    [
+                        15.5,
+                        -15.5
+                    ],
+                    "Pixel\u21d2SignedDec",
+                    [
+                        8,
+                        8
+                    ],
+                    "Vector\u21d2SignedDec",
+                    [
+                        7.5,
+                        0
+                    ]
+                ]
+            }
+        }
+    }
+}
