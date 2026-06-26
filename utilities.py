@@ -111,13 +111,85 @@ class Laeaxes:
 laeaxes = Laeaxes()
 
 class laerange:
-    def __init__(self, R, sign = False):
+    def __init__(self, R, sign = None):
         self.R = R
         self.sign = sign
-        self.range = {}
+        self.size = None
 
-    def setSize(self, vartype, size, sign = False):
-        self.range = (size, size)
+    def getPixelWidth(self):
+        return self.size
+
+    def getPixelHeight(self):
+        if self.sign:
+            return self.size * 2
+        else:
+            return self.size
+
+    def getPixelCoords(self, X, Y, yflip = True):
+        # R, dimension, counts positively
+        x = X
+
+        # T, value, counts based on sign
+        if self.sign:
+            y = Y
+            if y == 0:
+                raise ValueError("Zero won't exist w/o boundaries!")
+            elif y < 0:
+                y = y + 1
+            y = y + self.size
+        else:
+            y = Y
+        
+        if yflip:
+            y = -y
+        
+        return (x, y)
+
+    def getVectorWidth(self):
+        return self.size
+
+    def getVectorHeight(self):
+        if self.sign:
+            return {"SizeRect": (self.size, self.size * 2), "Xminmax": (0, self.size), "Yminmax": (-self.size, self.size)}
+        else:
+            return {"SizeSquare": self.size, "Xminmax": (0, self.size), "Yminmax": (0, self.size)}
+
+    def getVectorCoords(self, X, Y, yflip = True):
+        # R, dimension, counts positively
+        x = X
+
+        # T, value, counts based on sign
+        if self.sign:
+            y = Y
+            if y == 0:
+                raise ValueError("Zero won't exist w/o boundaries!")
+            elif y < 0:
+                y = y + 1
+            y = y + self.size
+        else:
+            y = Y
+        
+        if yflip:
+            y = -y
+        
+        x = x - 0.5
+
+        # TODO: rather, throw another Value exception if y is not +/-
+        #       integer value (discrete, whole number, and not zero
+        #       as there is no octave but boundary, but we don't generate
+        #       lanes for any boundaries - they are obvious, altough).
+        if y > 0.5:
+            y = y - 0.5
+        if y < -0.5:
+            y = y + 0.5
+
+        return (x, y)
+
+    def setSize(self, vartype, size, sign = None):
+        self.size = size
+
+        if sign != None:
+            self.sign = sign
 
 class Laeranges:
     def __init__(self):
@@ -128,22 +200,43 @@ class Laeranges:
             rang = {}
           
             rng = laerange(R)
-            rng.setSize("SignedTen", 2**(R), True)
-            rang["SignedTen"] = rng
-
-            rng = laerange(R)
-            rng.setSize("UnSignedTen", 2**(R + 1), False)
+            rng.setSize("UnSignedTen", math.floor(4**R), False)
             rang["UnSignedTen"] = rng
 
             rng = laerange(R)
-            rng.setSize("UnSignedDec", 2**(R), True)
+            rng.setSize("SignedTen", math.floor(4**(R - 0.5)), True)
+            rang["SignedTen"] = rng
+
+            rng = laerange(R)
+            rng.setSize("UnSignedDec", math.floor(4**(R)), True)
             rang["UnSignedDec"] = rng
 
             rng = laerange(R)
-            rng.setSize("SignedDec", 2**(R + 1), False)
+            rng.setSize("SignedDec", math.floor(4**R - 0.5), False)
             rang["SignedDec"] = rng
 
             self.ranges[R] = rang
+
+    def rangeR(self, R):
+        if R not in self.ranges:
+            self.setUpR(R)
+
+        return self.ranges[R]
+
+    # Return this as dicts-only, non-class object for json serialization.
+    def simp(self, R):
+        rangelocal = {}
+        for key, item in self.ranges[R].items():
+            impl = {}
+
+            impl["pixelWidth"] = item.getPixelWidth()
+            impl["pixelHeight"] = item.getPixelHeight()
+            impl["vectorWidth"] = item.getVectorWidth()
+            impl["vectorHeight"] = item.getVectorHeight()
+
+            rangelocal[key] = {"R": item.R, "sign": item.sign, "size": item.size, "Impl": impl}
+
+        return rangelocal
 
     def UnSignedTen(self, R):
         if R not in self.ranges:
@@ -293,6 +386,78 @@ class laenum:
         
         return R
 
+    def generatePointsCanvas(self):
+        # This is responsible already for whole drawing
+
+        Canvas = {}
+        
+        R = self.getR()
+        Canvas["R"] = self.getR()
+
+        # Generate range
+        range = laeranges.rangeR(R)
+        # Generate it for output: class replaced with dict
+        Canvas["Range"] = ("Common", laeranges.simp(R))
+
+        # I removed artistic consideration, because extensions
+        # can do that.
+        Canvas["Background"] = ("Common", "White")
+        Canvas["Foreground"] = ("Common", "Black")
+
+        Canvas["Lines"] = []
+        Canvas["Circles"] = []
+
+        points = self.generatePoints()
+
+        keys = list(points.keys())
+        pairs = list(zip(keys, keys[1:]))
+
+        for a, b in pairs:
+            Canvas["Lines"] += ("Pixel⇒UnSignedTen", range["UnSignedTen"]
+                .getPixelCoords(points[a]["Ten"]["UnSigned"]["X"], points[a]["Ten"]["UnSigned"]["Y"]), "to", range["UnSignedTen"]
+                .getPixelCoords(points[b]["Ten"]["UnSigned"]["X"], points[b]["Ten"]["UnSigned"]["Y"]))
+            Canvas["Lines"] += ("Vector⇒UnSignedTen", range["UnSignedTen"]
+                .getVectorCoords(points[a]["Ten"]["UnSigned"]["X"], points[a]["Ten"]["UnSigned"]["Y"]), "to", range["UnSignedTen"]
+                .getPixelCoords(points[b]["Ten"]["UnSigned"]["X"], points[b]["Ten"]["UnSigned"]["Y"]))
+            Canvas["Lines"] += ("Pixel⇒SignedTen", range["SignedTen"]
+                .getPixelCoords(points[a]["Ten"]["Signed"]["X"], points[a]["Ten"]["Signed"]["Y"]), "to", range["SignedTen"]
+                .getPixelCoords(points[b]["Ten"]["Signed"]["X"], points[b]["Ten"]["Signed"]["Y"]))
+            Canvas["Lines"] += ("Vector⇒SignedTen", range["SignedTen"]
+                .getVectorCoords(points[a]["Ten"]["Signed"]["X"], points[a]["Ten"]["Signed"]["Y"]), "to", range["SignedTen"]
+                .getPixelCoords(points[b]["Ten"]["Signed"]["X"], points[b]["Ten"]["Signed"]["Y"]))
+            Canvas["Lines"] += ("Pixel⇒UnSignedDec", range["UnSignedDec"]
+                .getPixelCoords(points[a]["Dec"]["UnSigned"]["X"], points[a]["Dec"]["UnSigned"]["Y"]), "to", range["UnSignedDec"]
+                .getPixelCoords(points[b]["Dec"]["UnSigned"]["X"], points[b]["Dec"]["UnSigned"]["Y"]))
+            Canvas["Lines"] += ("Vector⇒UnSignedDec", range["UnSignedDec"]
+                .getVectorCoords(points[a]["Dec"]["UnSigned"]["X"], points[a]["Dec"]["UnSigned"]["Y"]), "to", range["UnSignedDec"]
+                .getPixelCoords(points[b]["Dec"]["UnSigned"]["X"], points[b]["Dec"]["UnSigned"]["Y"]))
+            Canvas["Lines"] += ("Pixel⇒SignedDec", range["SignedDec"]
+                .getPixelCoords(points[a]["Dec"]["Signed"]["X"], points[a]["Dec"]["Signed"]["Y"]), "to", range["SignedDec"]
+                .getPixelCoords(points[b]["Dec"]["Signed"]["X"], points[b]["Dec"]["Signed"]["Y"]))
+            Canvas["Lines"] += ("Vector⇒SignedDec", range["SignedDec"]
+                .getVectorCoords(points[a]["Dec"]["Signed"]["X"], points[a]["Dec"]["Signed"]["Y"]), "to", range["SignedDec"]
+                .getPixelCoords(points[b]["Dec"]["Signed"]["X"], points[b]["Dec"]["Signed"]["Y"]))
+
+        for point in points:
+            Canvas["Circles"] += ("Pixel⇒UnSignedTen", range["UnSignedTen"]
+                .getPixelCoords(points[point]["Ten"]["UnSigned"]["X"], points[point]["Ten"]["UnSigned"]["Y"]))
+            Canvas["Circles"] += ("Vector⇒UnSignedTen", range["UnSignedTen"]
+                .getPixelCoords(points[point]["Ten"]["UnSigned"]["X"], points[point]["Ten"]["UnSigned"]["Y"]))
+            Canvas["Circles"] += ("Pixel⇒SignedTen", range["SignedTen"]
+                .getPixelCoords(points[point]["Ten"]["Signed"]["X"], points[point]["Ten"]["Signed"]["Y"]))
+            Canvas["Circles"] += ("Vector⇒SignedTen", range["SignedTen"]
+                .getPixelCoords(points[point]["Ten"]["Signed"]["X"], points[point]["Ten"]["Signed"]["Y"]))
+            Canvas["Circles"] += ("Pixel⇒UnSignedDec", range["UnSignedDec"]
+                .getPixelCoords(points[point]["Dec"]["UnSigned"]["X"], points[point]["Dec"]["UnSigned"]["Y"]))
+            Canvas["Circles"] += ("Vector⇒UnSignedDec", range["UnSignedDec"]
+                .getPixelCoords(points[point]["Dec"]["UnSigned"]["X"], points[point]["Dec"]["UnSigned"]["Y"]))
+            Canvas["Circles"] += ("Pixel⇒SignedDec", range["SignedDec"]
+                .getPixelCoords(points[point]["Dec"]["Signed"]["X"], points[point]["Dec"]["Signed"]["Y"]))
+            Canvas["Circles"] += ("Vector⇒SignedDec", range["SignedDec"]
+                .getPixelCoords(points[point]["Dec"]["Signed"]["X"], points[point]["Dec"]["Signed"]["Y"]))
+
+        return Canvas
+
     def generatePoints(self):
         num = 0
         points = {}
@@ -339,24 +504,22 @@ class laenumCanvas:
         # cd - Canvas Draw
         self.CD = {}
 
-        self.CD["SignedTen"] = {}
-        self.CD["SignedTen"]["Range"] = laeranges.SignedTen(self.laen.getR())
-        self.draw("Signed", "Ten")
-
         self.CD["UnSignedTen"] = {}
         self.CD["UnSignedTen"]["Range"] = laeranges.UnSignedTen(self.laen.getR())
         self.draw("UnSigned", "Ten")
 
-        self.CD["SignedDec"] = {}
-        self.CD["SignedDec"]["Range"] = laeranges.SignedDec(self.laen.getR())
-        self.draw("Signed", "Dec")
+        self.CD["SignedTen"] = {}
+        self.CD["SignedTen"]["Range"] = laeranges.SignedTen(self.laen.getR())
+        self.draw("Signed", "Ten")
 
         self.CD["UnSignedDec"] = {}
         self.CD["UnSignedDec"]["Range"] = laeranges.UnSignedDec(self.laen.getR())
         self.draw("UnSigned", "Dec")
 
+        self.CD["SignedDec"] = {}
+        self.CD["SignedDec"]["Range"] = laeranges.SignedDec(self.laen.getR())
+        self.draw("Signed", "Dec")
+
     def draw(self, s, t):
         CD = self.CD[s + t]
         points = self.laen.generatePoints()
-
-        

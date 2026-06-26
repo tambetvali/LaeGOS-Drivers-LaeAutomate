@@ -19,9 +19,16 @@ for r in Rs:
     datacanvas["R"][r] = {}
     for laen in R(r):
         data["R"][r][laen.Lae4()] = laen.generatePoints()
+        datacanvas["R"][r][laen.Lae4()] = laen.generatePointsCanvas()
+
+print(datacanvas["R"])
 
 data["axes"] = laeaxes.axes
-datacanvas["ranges"] = laeranges.ranges
+
+datacanvas["ranges"] = {}
+
+for R in laeranges.ranges:
+    datacanvas["ranges"][R] = laeranges.simp(R)
 
 if not os.path.exists("gosdb"):
     os.mkdir("gosdb")
@@ -31,4 +38,4 @@ with open("gosdb/lanes.json", "w") as f:
 
 with open("gosdb/canvas.json", "w") as f:
     json.dump(datacanvas, f, indent=4)  # indent for pretty formatting
-
+ 
