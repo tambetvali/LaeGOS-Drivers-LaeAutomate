@@ -409,48 +409,80 @@ class laenum:
         pairs = list(zip(keys, keys[1:]))
 
         for a, b in pairs:
-            Canvas["Lines"] += ("Pixel⇒UnSignedTen", range["UnSignedTen"]
-                .getPixelCoords(points[a]["Ten"]["UnSigned"]["X"], points[a]["Ten"]["UnSigned"]["Y"]), "to", range["UnSignedTen"]
-                .getPixelCoords(points[b]["Ten"]["UnSigned"]["X"], points[b]["Ten"]["UnSigned"]["Y"]))
-            Canvas["Lines"] += ("Vector⇒UnSignedTen", range["UnSignedTen"]
-                .getVectorCoords(points[a]["Ten"]["UnSigned"]["X"], points[a]["Ten"]["UnSigned"]["Y"]), "to", range["UnSignedTen"]
-                .getVectorCoords(points[b]["Ten"]["UnSigned"]["X"], points[b]["Ten"]["UnSigned"]["Y"]))
-            Canvas["Lines"] += ("Pixel⇒SignedTen", range["SignedTen"]
-                .getPixelCoords(points[a]["Ten"]["Signed"]["X"], points[a]["Ten"]["Signed"]["Y"]), "to", range["SignedTen"]
-                .getPixelCoords(points[b]["Ten"]["Signed"]["X"], points[b]["Ten"]["Signed"]["Y"]))
-            Canvas["Lines"] += ("Vector⇒SignedTen", range["SignedTen"]
-                .getVectorCoords(points[a]["Ten"]["Signed"]["X"], points[a]["Ten"]["Signed"]["Y"]), "to", range["SignedTen"]
-                .getVectorCoords(points[b]["Ten"]["Signed"]["X"], points[b]["Ten"]["Signed"]["Y"]))
-            Canvas["Lines"] += ("Pixel⇒UnSignedDec", range["UnSignedDec"]
-                .getPixelCoords(points[a]["Dec"]["UnSigned"]["X"], points[a]["Dec"]["UnSigned"]["Y"]), "to", range["UnSignedDec"]
-                .getPixelCoords(points[b]["Dec"]["UnSigned"]["X"], points[b]["Dec"]["UnSigned"]["Y"]))
-            Canvas["Lines"] += ("Vector⇒UnSignedDec", range["UnSignedDec"]
-                .getVectorCoords(points[a]["Dec"]["UnSigned"]["X"], points[a]["Dec"]["UnSigned"]["Y"]), "to", range["UnSignedDec"]
-                .getVectorCoords(points[b]["Dec"]["UnSigned"]["X"], points[b]["Dec"]["UnSigned"]["Y"]))
-            Canvas["Lines"] += ("Pixel⇒SignedDec", range["SignedDec"]
-                .getPixelCoords(points[a]["Dec"]["Signed"]["X"], points[a]["Dec"]["Signed"]["Y"]), "to", range["SignedDec"]
-                .getPixelCoords(points[b]["Dec"]["Signed"]["X"], points[b]["Dec"]["Signed"]["Y"]))
-            Canvas["Lines"] += ("Vector⇒SignedDec", range["SignedDec"]
-                .getVectorCoords(points[a]["Dec"]["Signed"]["X"], points[a]["Dec"]["Signed"]["Y"]), "to", range["SignedDec"]
-                .getVectorCoords(points[b]["Dec"]["Signed"]["X"], points[b]["Dec"]["Signed"]["Y"]))
+            Canvas["Lines"].append({
+                "type": "Pixel⇒UnSignedTen",
+                "from": range["UnSignedTen"].getPixelCoords(points[a]["Ten"]["UnSigned"]["X"], points[a]["Ten"]["UnSigned"]["Y"]),
+                "to": range["UnSignedTen"].getPixelCoords(points[b]["Ten"]["UnSigned"]["X"], points[b]["Ten"]["UnSigned"]["Y"]),
+            })
+            Canvas["Lines"].append({
+                "type": "Vector⇒UnSignedTen",
+                "from": range["UnSignedTen"].getVectorCoords(points[a]["Ten"]["UnSigned"]["X"], points[a]["Ten"]["UnSigned"]["Y"]),
+                "to": range["UnSignedTen"].getVectorCoords(points[b]["Ten"]["UnSigned"]["X"], points[b]["Ten"]["UnSigned"]["Y"]),
+            })
+            Canvas["Lines"].append({
+                "type": "Pixel⇒SignedTen",
+                "from": range["SignedTen"].getPixelCoords(points[a]["Ten"]["Signed"]["X"], points[a]["Ten"]["Signed"]["Y"]),
+                "to": range["SignedTen"].getPixelCoords(points[b]["Ten"]["Signed"]["X"], points[b]["Ten"]["Signed"]["Y"]),
+            })
+            Canvas["Lines"].append({
+                "type": "Vector⇒SignedTen",
+                "from": range["SignedTen"].getVectorCoords(points[a]["Ten"]["Signed"]["X"], points[a]["Ten"]["Signed"]["Y"]),
+                "to": range["SignedTen"].getVectorCoords(points[b]["Ten"]["Signed"]["X"], points[b]["Ten"]["Signed"]["Y"]),
+            })
+            Canvas["Lines"].append({
+                "type": "Pixel⇒UnSignedDec",
+                "from": range["UnSignedDec"].getPixelCoords(points[a]["Dec"]["UnSigned"]["X"], points[a]["Dec"]["UnSigned"]["Y"]),
+                "to": range["UnSignedDec"].getPixelCoords(points[b]["Dec"]["UnSigned"]["X"], points[b]["Dec"]["UnSigned"]["Y"]),
+            })
+            Canvas["Lines"].append({
+                "type": "Vector⇒UnSignedDec",
+                "from": range["UnSignedDec"].getVectorCoords(points[a]["Dec"]["UnSigned"]["X"], points[a]["Dec"]["UnSigned"]["Y"]),
+                "to": range["UnSignedDec"].getVectorCoords(points[b]["Dec"]["UnSigned"]["X"], points[b]["Dec"]["UnSigned"]["Y"]),
+            })
+            Canvas["Lines"].append({
+                "type": "Pixel⇒SignedDec",
+                "from": range["SignedDec"].getPixelCoords(points[a]["Dec"]["Signed"]["X"], points[a]["Dec"]["Signed"]["Y"]),
+                "to": range["SignedDec"].getPixelCoords(points[b]["Dec"]["Signed"]["X"], points[b]["Dec"]["Signed"]["Y"]),
+            })
+            Canvas["Lines"].append({
+                "type": "Vector⇒SignedDec",
+                "from": range["SignedDec"].getVectorCoords(points[a]["Dec"]["Signed"]["X"], points[a]["Dec"]["Signed"]["Y"]),
+                "to": range["SignedDec"].getVectorCoords(points[b]["Dec"]["Signed"]["X"], points[b]["Dec"]["Signed"]["Y"]),
+            })
 
         for point in points:
-            Canvas["Circles"] += ("Pixel⇒UnSignedTen", range["UnSignedTen"]
-                .getPixelCoords(points[point]["Ten"]["UnSigned"]["X"], points[point]["Ten"]["UnSigned"]["Y"]))
-            Canvas["Circles"] += ("Vector⇒UnSignedTen", range["UnSignedTen"]
-                .getVectorCoords(points[point]["Ten"]["UnSigned"]["X"], points[point]["Ten"]["UnSigned"]["Y"]))
-            Canvas["Circles"] += ("Pixel⇒SignedTen", range["SignedTen"]
-                .getPixelCoords(points[point]["Ten"]["Signed"]["X"], points[point]["Ten"]["Signed"]["Y"]))
-            Canvas["Circles"] += ("Vector⇒SignedTen", range["SignedTen"]
-                .getVectorCoords(points[point]["Ten"]["Signed"]["X"], points[point]["Ten"]["Signed"]["Y"]))
-            Canvas["Circles"] += ("Pixel⇒UnSignedDec", range["UnSignedDec"]
-                .getPixelCoords(points[point]["Dec"]["UnSigned"]["X"], points[point]["Dec"]["UnSigned"]["Y"]))
-            Canvas["Circles"] += ("Vector⇒UnSignedDec", range["UnSignedDec"]
-                .getVectorCoords(points[point]["Dec"]["UnSigned"]["X"], points[point]["Dec"]["UnSigned"]["Y"]))
-            Canvas["Circles"] += ("Pixel⇒SignedDec", range["SignedDec"]
-                .getPixelCoords(points[point]["Dec"]["Signed"]["X"], points[point]["Dec"]["Signed"]["Y"]))
-            Canvas["Circles"] += ("Vector⇒SignedDec", range["SignedDec"]
-                .getVectorCoords(points[point]["Dec"]["Signed"]["X"], points[point]["Dec"]["Signed"]["Y"]))
+            Canvas["Circles"].append({
+                "type": "Pixel⇒UnSignedTen",
+                "point": range["UnSignedTen"].getPixelCoords(points[point]["Ten"]["UnSigned"]["X"], points[point]["Ten"]["UnSigned"]["Y"]),
+            })
+            Canvas["Circles"].append({
+                "type": "Vector⇒UnSignedTen",
+                "point": range["UnSignedTen"].getVectorCoords(points[point]["Ten"]["UnSigned"]["X"], points[point]["Ten"]["UnSigned"]["Y"]),
+            })
+            Canvas["Circles"].append({
+                "type": "Pixel⇒SignedTen",
+                "point": range["SignedTen"].getPixelCoords(points[point]["Ten"]["Signed"]["X"], points[point]["Ten"]["Signed"]["Y"]),
+            })
+            Canvas["Circles"].append({
+                "type": "Vector⇒SignedTen",
+                "point": range["SignedTen"].getVectorCoords(points[point]["Ten"]["Signed"]["X"], points[point]["Ten"]["Signed"]["Y"]),
+            })
+            Canvas["Circles"].append({
+                "type": "Pixel⇒UnSignedDec",
+                "point": range["UnSignedDec"].getPixelCoords(points[point]["Dec"]["UnSigned"]["X"], points[point]["Dec"]["UnSigned"]["Y"]),
+            })
+            Canvas["Circles"].append({
+                "type": "Vector⇒UnSignedDec",
+                "point": range["UnSignedDec"].getVectorCoords(points[point]["Dec"]["UnSigned"]["X"], points[point]["Dec"]["UnSigned"]["Y"]),
+            })
+            Canvas["Circles"].append({
+                "type": "Pixel⇒SignedDec",
+                "point": range["SignedDec"].getPixelCoords(points[point]["Dec"]["Signed"]["X"], points[point]["Dec"]["Signed"]["Y"]),
+            })
+            Canvas["Circles"].append({
+                "type": "Vector⇒SignedDec",
+                "point": range["SignedDec"].getVectorCoords(points[point]["Dec"]["Signed"]["X"], points[point]["Dec"]["Signed"]["Y"]),
+            })
 
         return Canvas
 
