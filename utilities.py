@@ -77,35 +77,35 @@ class Laeaxes:
 
     def SignedAxeTenYstr(self, num):
         self.findpoint(num)
-        return "Axes.UnSignedTen[\"" + str(num) + "\"]"
+        return "Axes.SignedTen[\"" + str(num) + "\"]"
 
     def UnSignedAxeTenYstr(self, num):
         self.findpoint(num)
-        return "Axes.SignedTen[\"" + str(num) + "\"]"
+        return "Axes.UnSignedTen[\"" + str(num) + "\"]"
 
     def SignedAxeDecYstr(self, num):
         self.findpoint(num)
-        return "Axes.UnSignedDec[\"" + str(num) + "\"]"
+        return "Axes.SignedDec[\"" + str(num) + "\"]"
 
     def UnSignedAxeDecYstr(self, num):
         self.findpoint(num)
-        return "Axes.SignedDec[\"" + str(num) + "\"]"
+        return "Axes.UnSignedDec[\"" + str(num) + "\"]"
 
     def SignedAxeTenYpnt(self, num, point):
         self.findpoint(num)
-        return "Axes.UnSignedTen[\"" + str(num) + "\"][\"" + str(point) + "\"]"
+        return "Axes.SignedTen[\"" + str(num) + "\"][\"" + str(point) + "\"]"
 
     def UnSignedAxeTenYpnt(self, num, point):
         self.findpoint(num)
-        return "Axes.SignedTen[\"" + str(num) + "\"][\"" + str(point) + "\"]"
+        return "Axes.UnSignedTen[\"" + str(num) + "\"][\"" + str(point) + "\"]"
 
     def SignedAxeDecYpnt(self, num, point):
         self.findpoint(num)
-        return "Axes.UnSignedDec[\"" + str(num) + "\"][\"" + str(point) + "\"]"
+        return "Axes.SignedDec[\"" + str(num) + "\"][\"" + str(point) + "\"]"
 
     def UnSignedAxeDecYpnt(self, num, point):
         self.findpoint(num)
-        return "Axes.SignedDec[\"" + str(num) + "\"][\"" + str(point) + "\"]"
+        return "Axes.UnSignedDec[\"" + str(num) + "\"][\"" + str(point) + "\"]"
 
 # Growing singleton
 laeaxes = Laeaxes()
@@ -127,20 +127,20 @@ class Laeranges:
         if R not in self.ranges:
             rang = {}
           
-            rng = Laerange(R)
-            rng.setSize("SignedTen", 2**(R - 1), True)
+            rng = laerange(R)
+            rng.setSize("SignedTen", 2**(R), True)
             rang["SignedTen"] = rng
 
-            rng = Laerange(R)
-            rng.setSize("UnSignedTen", 2**R, False)
+            rng = laerange(R)
+            rng.setSize("UnSignedTen", 2**(R + 1), False)
             rang["UnSignedTen"] = rng
 
-            rng = Laerange(R)
+            rng = laerange(R)
             rng.setSize("UnSignedDec", 2**(R), True)
             rang["UnSignedDec"] = rng
 
-            rng = Laerange(R)
-            rng.setSize("SignedDec", 2**(R - 1), False)
+            rng = laerange(R)
+            rng.setSize("SignedDec", 2**(R + 1), False)
             rang["SignedDec"] = rng
 
             self.ranges[R] = rang
