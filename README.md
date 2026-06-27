@@ -130,8 +130,6 @@ Laegna’s number systems and SC5N projection rules.
 > always map to the correct geometric positions, even across different R‑levels
 > and Signed/UnSigned projections?
 
-![Strict SC5N Geometry vs Philosophical Laegna Interpretations](Images/sc5n_vs_philosophical_laegna.png)
-
 **A4.**  
 The guarantee comes from the fact that SC5N uses a *three‑stage mapping* that
 never changes order:
@@ -205,6 +203,8 @@ optimization, and a validation tool all at once.
 > How does the strict SC5N dataset relate to the broader Laegna ecosystem,
 > especially the artistic, philosophical, or metaphorical interpretations of
 > number systems and truth‑values?
+
+![Strict SC5N Geometry vs Philosophical Laegna Interpretations](Images/sc5n_vs_philosophical_laegna.png)
 
 **A6.**  
 The strict SC5N dataset is the *operational backbone* of Laegna. It is not a
