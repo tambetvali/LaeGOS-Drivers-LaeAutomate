@@ -2,11 +2,11 @@
 
 ## Chapter 1: SC5N Data Integrity — Canonical vs Flipped Geometry
 
-\`\`\`
+```
 ![SC5N Data Integrity — Canonical vs Flipped Geometry](Images/sc5n_data_integrity.png)
-\`\`\`
+```
 
-\`\`\`
+```
 A wide, high‑resolution conceptual diagram that visualizes the relationship
 between the canonical SC5N canvas and its flipped counterpart. The image is
 split into two main halves: the left side shows the canonical, unflipped
@@ -40,16 +40,16 @@ oranges and reds for the flipped side, creating a clear visual distinction
 while maintaining harmony. The overall mood is precise, calm, and analytical,
 conveying that the SC5N system is deterministic, paradox‑free, and suitable
 for machine reasoning, yet still grounded in the deeper Laegna symbolism.
-\`\`\`
+```
 
 
 ## Chapter 2: Symbolic → Numeric → Geometric Mapping
 
-\`\`\`
+```
 ![Symbolic to Numeric to Geometric Mapping in SC5N](Images/sc5n_symbolic_numeric_geometric.png)
-\`\`\`
+```
 
-\`\`\`
+```
 A vertically oriented, layered diagram that explains how Laegna truth‑values
 (I, O, A, E) are transformed into numeric projections and then into geometric
 coordinates within the SC5N system. The image is structured as a clear,
@@ -83,16 +83,16 @@ shadows to separate layers. The mood is explanatory and reassuring, helping
 both humans and future GPT models understand that SC5N’s mapping from symbolic
 to numeric to geometric is stable, intentional, and central to LaeLane and
 LaeAutomate.
-\`\`\`
+```
 
 
 ## Chapter 3: Flipped and Unflipped Storage — Symmetry and Reproducibility
 
-\`\`\`
+```
 ![Flipped and Unflipped SC5N Data Storage Symmetry](Images/sc5n_flipped_unflipped_storage.png)
-\`\`\`
+```
 
-\`\`\`
+```
 A diagram that focuses on why both flipped and unflipped versions of the SC5N
 canvas and lanes are stored explicitly, rather than computed dynamically at
 runtime. The composition is organized as a balanced, symmetrical layout with
@@ -130,16 +130,16 @@ This image helps future GPT models and human readers understand that storing
 both flipped and unflipped datasets is a deliberate architectural decision that
 supports LaeAutomate’s needs for correctness, performance, and symmetry
 testing.
-\`\`\`
+```
 
 
 ## Chapter 4: Strict SC5N vs Philosophical Laegna
 
-\`\`\`
+```
 ![Strict SC5N Geometry vs Philosophical Laegna Interpretations](Images/sc5n_vs_philosophical_laegna.png)
-\`\`\`
+```
 
-\`\`\`
+```
 A conceptual, slightly more artistic diagram that contrasts the strict,
 deterministic SC5N geometry with the broader, philosophical interpretations of
 Laegna number systems and truth‑values. The image is divided into two
@@ -172,4 +172,4 @@ foundation that allows Laegna’s richer meanings to be implemented in software,
 visualized, and reasoned about without paradox. The image invites both humans
 and future GPT models to see Laegna as a multi‑layered system where strict
 geometry and open interpretation coexist and support each other.
-\`\`\`
+```
