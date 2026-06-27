@@ -50,9 +50,9 @@ All major invariants hold:
 
 Inner example (escaped fences):
 
-\`\`\`json
+```json
 { "I": { "SignedTen": { "X": 2, "Y": -2 } } }
-\`\`\`
+```
 
 The strict SC5N dataset is therefore deterministic, machine‑safe, and fully
 compatible with the broader Laegna ecosystem.
@@ -63,6 +63,8 @@ compatible with the broader Laegna ecosystem.
 > Does the strict SC5N coordinate system contradict or limit the more open,
 > artistic, or philosophical interpretations of Laegna (such as truth‑flavors,
 > infinity metaphors, or conceptual number systems)?
+
+![Symbolic to Numeric to Geometric Mapping in SC5N](Images/sc5n_symbolic_numeric_geometric.png)
 
 **A2.**  
 No contradiction exists. Laegna operates on two layers:
@@ -81,11 +83,11 @@ philosophical layer *generates* the strict layer, not the other way around.
 
 Inner example (escaped fences):
 
-\`\`\`text
+```text
 I/O/A/E → symbolic truth-flavors  
 SignedTen/UnSignedTen → numeric projections  
 SC5N → geometric realization
-\`\`\`
+```
 
 Thus, the strict SC5N dataset is fully compatible with the broader Laegna
 ecosystem.
@@ -95,6 +97,8 @@ ecosystem.
 > **Q3.**  
 > Are there any exceptions, edge‑cases, or special behaviors in the SC5N
 > datasets that require attention when interpreting or using the data?
+
+![Flipped and Unflipped SC5N Data Storage Symmetry](Images/sc5n_flipped_unflipped_storage.png)
 
 **A3.**  
 Yes, a few meaningful exceptions exist, all intentional:
@@ -110,9 +114,9 @@ Yes, a few meaningful exceptions exist, all intentional:
 
 Inner example (escaped fences):
 
-\`\`\`json
+```json
 { "IA": { "SignedDec": { "Y_unflip": -2, "Y_flip": -4 } } }
-\`\`\`
+```
 
 None of these exceptions indicate errors. They reflect the deeper structure of
 Laegna’s number systems and SC5N projection rules.
@@ -125,6 +129,8 @@ Laegna’s number systems and SC5N projection rules.
 > How does the SC5N dataset guarantee that symbolic Laegna digits (I, O, A, E)
 > always map to the correct geometric positions, even across different R‑levels
 > and Signed/UnSigned projections?
+
+![Strict SC5N Geometry vs Philosophical Laegna Interpretations](Images/sc5n_vs_philosophical_laegna.png)
 
 **A4.**  
 The guarantee comes from the fact that SC5N uses a *three‑stage mapping* that
@@ -150,9 +156,9 @@ symbolic or numeric layers.
 
 Inner example (escaped fences):
 
-\`\`\`json
+```json
 { "A": { "SignedTen": { "X": 2, "Y": 1 } } }
-\`\`\`
+```
 
 This layered approach ensures that symbolic truth‑values always land in the
 correct geometric positions, regardless of orientation or scale.
@@ -185,10 +191,10 @@ There are three reasons:
 
 Inner example (escaped fences):
 
-\`\`\`text
+```text
 lanes_unflip.json → canonical  
 lanes.json        → mirrored
-\`\`\`
+```
 
 Storing both versions is therefore a correctness guarantee, a performance
 optimization, and a validation tool all at once.
@@ -226,10 +232,10 @@ It is the “crystallized” form that machines can use without ambiguity.
 
 Inner example (escaped fences):
 
-\`\`\`text
+```text
 Conceptual:  I = negotion, O = negation, A = position, E = posetion  
 Strict:      I/O/A/E → numeric → projected → geometric
-\`\`\`
+```
 
 Thus, the SC5N dataset is not a constraint on Laegna’s broader meaning; it is
 the stable foundation that allows Laegna to be implemented in software,
