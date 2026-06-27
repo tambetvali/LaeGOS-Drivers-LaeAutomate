@@ -13,6 +13,8 @@ This folder here will be definitely arranged to automata: LaeGOS-Widgets is goin
 
 CoPilot's confirmation - "diploma" series of Laegna, where it operates the robotability:
 
+***Notice this development is not stable yet, and what is given here can change.***
+
 # Q&A: Verification of SC5N Canvas and Lane Data Integrity
 
 ![SC5N Data Integrity — Canonical vs Flipped Geometry](Images/sc5n_data_integrity.png)
