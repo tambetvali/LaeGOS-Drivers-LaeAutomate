@@ -119,33 +119,43 @@ class laerange:
     def getPixelWidth(self):
         return self.size
 
+    def int_if_whole(self, value):
+        if isinstance(value, float) and value.is_integer():
+            return int(value)
+        return value
+
     def getPixelHeight(self):
+        height = self.size * 2 if self.sign else self.size
+        return self.int_if_whole(height)
+
+    def getYFlipped(self, y, yflip = True):
+        if not yflip:
+            return y
+
         if self.sign:
-            return self.size * 2
-        else:
-            return self.size
+            return -y
+
+        return self.getPixelHeight() + 1 - y
 
     def getPixelCoords(self, X, Y, yflip = True):
         # R, dimension, counts positively
-        x = X
+        x = self.int_if_whole(X)
         y = Y
 
-        if yflip:
-            if self.sign:
-                y = -y
-            else:
-                y = self.getPixelHeight() - y
-        
-        # T, value, counts based on sign
         if self.sign:
             if y == 0:
                 raise ValueError("Zero won't exist w/o boundaries!")
-            elif y < 0:
-                y = y + 1
-            y = y + self.size
+            if yflip:
+                y = -y
+            if y < 0:
+                y = y + self.size + 1
+            else:
+                y = y + self.size
         else:
-            y = Y
-        
+            y = self.int_if_whole(self.getYFlipped(Y, yflip))
+
+        x = self.int_if_whole(x)
+        y = self.int_if_whole(y)
         return (x, y)
 
     def getVectorWidth(self):
@@ -153,22 +163,16 @@ class laerange:
 
     def getVectorHeight(self):
         if self.sign:
-            return {"SizeRect": (self.size, self.size * 2), "Xminmax": (0, self.size), "Yminmax": (-self.size, self.size)}
+            return {"SizeRect": (self.int_if_whole(self.size), self.int_if_whole(self.size * 2)), "Xminmax": (0, self.int_if_whole(self.size)), "Yminmax": (-self.int_if_whole(self.size), self.int_if_whole(self.size))}
         else:
-            return {"SizeSquare": self.size, "Xminmax": (0, self.size), "Yminmax": (0, self.size)}
+            return {"SizeSquare": self.int_if_whole(self.size), "Xminmax": (0, self.int_if_whole(self.size)), "Yminmax": (0, self.int_if_whole(self.size))}
 
     def getVectorCoords(self, X, Y, yflip = True):
         # R, dimension, counts positively
-        x = X
-        y = Y
+        x = self.int_if_whole(X)
+        y = self.getYFlipped(Y, yflip)
 
-        if yflip:
-            if self.sign:
-                y = -y
-            else:
-                y = self.getPixelHeight() - y
-        
-        x = x - 0.5
+        x = self.int_if_whole(x - 0.5)
 
         # TODO: rather, throw another Value exception if y is not +/-
         #       integer value (discrete, whole number, and not zero
@@ -179,6 +183,7 @@ class laerange:
         if y < -0.5:
             y = y + 0.5
 
+        y = self.int_if_whole(y)
         return (x, y)
 
     def setSize(self, vartype, size, sign = None):
@@ -204,11 +209,11 @@ class Laeranges:
             rang["SignedTen"] = rng
 
             rng = laerange(R)
-            rng.setSize("UnSignedDec", 2**(R*2), True)
+            rng.setSize("UnSignedDec", 2**(R*2), False)
             rang["UnSignedDec"] = rng
 
             rng = laerange(R)
-            rng.setSize("SignedDec", 2**(R*2 - 1), False)
+            rng.setSize("SignedDec", 2**(R*2 - 1), True)
             rang["SignedDec"] = rng
 
             self.ranges[R] = rang
@@ -225,12 +230,12 @@ class Laeranges:
         for key, item in self.ranges[R].items():
             impl = {}
 
-            impl["pixelWidth"] = item.getPixelWidth()
-            impl["pixelHeight"] = item.getPixelHeight()
-            impl["vectorWidth"] = item.getVectorWidth()
+            impl["pixelWidth"] = item.int_if_whole(item.getPixelWidth())
+            impl["pixelHeight"] = item.int_if_whole(item.getPixelHeight())
+            impl["vectorWidth"] = item.int_if_whole(item.getVectorWidth())
             impl["vectorHeight"] = item.getVectorHeight()
 
-            rangelocal[key] = {"R": item.R, "sign": item.sign, "size": item.size, "Impl": impl}
+            rangelocal[key] = {"R": item.R, "sign": item.sign, "size": item.int_if_whole(item.size), "Impl": impl}
 
         return rangelocal
 
@@ -274,7 +279,7 @@ class laenum:
     def iterBaselae4(self):
         if self.digits == []:
             return
-        
+
         n = ""
         for d in self.digits:
             n = n + d
@@ -290,11 +295,24 @@ class laenum:
         if n == "A": yield "E"
         if n == "O": yield "I"
 
+    def iterBaselae4Values(self):
+        if len(self.digits) == 1:
+            if self.digits[0] == "O":
+                yield "I"
+            elif self.digits[0] == "A":
+                yield "E"
+            return
+
+        yield from self.iterBaselae4()
+
     def Lae4(self):
-      num = ""
-      for d in self.iterBaselae4():
-        num += d
-      return num
+        if len(self.digits) == 1:
+            return self.digits[0]
+
+        num = ""
+        for d in self.iterBaselae4():
+            num += d
+        return num
 
     def LaeComplex(self):
         digitval1 = ""
@@ -325,12 +343,19 @@ class laenum:
             yield d
 
     def iterBaselae4conc(self):
+        if len(self.digits) == 1:
+            yield self.digits[0]
+            return
+
         full = ""
         for n in self.iterBaselae4():
             full = full + n
             yield full
 
     def __str__(self):
+        if len(self.digits) == 1:
+            return self.digits[0]
+
         laenum = ""
         for d in self.iterBaselae4():
             laenum += d
@@ -343,7 +368,9 @@ class laenum:
     def getUnSignedTen(self):
         decimal_value = 0
         power = len(self.digits) // 2
-        for digit in self.iterBaselae4():
+        if len(self.digits) == 1:
+            power = 1
+        for digit in self.iterBaselae4Values():
             if digit == 'I': digitval = 0
             if digit == 'O': digitval = 1
             if digit == 'A': digitval = 2
@@ -354,11 +381,19 @@ class laenum:
         return decimal_value
 
     def getSignedTen(self):
+        if len(self.digits) == 1:
+            if self.digits[0] == 'O':
+                return -2
+            if self.digits[0] == 'A':
+                return 2
         decimal_value = self.getUnSignedTen() - 4**((len(self.digits) // 2)) // 2
         if decimal_value < 1: decimal_value = decimal_value - 1
         return decimal_value
 
     def getUnSignedDec(self):
+        if len(self.digits) == 1:
+            return self.getUnSignedTen()
+
         decimal_value = 0
         power = len(self.digits) // 2
         for digit in self.iterLaeComplex():
@@ -372,6 +407,9 @@ class laenum:
         return decimal_value
 
     def getSignedDec(self):
+        if len(self.digits) == 1:
+            return self.getSignedTen()
+
         decimal_value = self.getUnSignedDec() - 4**((len(self.digits) // 2)) // 2
         if decimal_value < 1: decimal_value = decimal_value - 1
         return decimal_value
@@ -382,7 +420,7 @@ class laenum:
         
         return R
 
-    def generatePointsCanvas(self):
+    def generatePointsCanvas(self, unflip = False):
         # This is responsible already for whole drawing
 
         Canvas = {}
@@ -411,115 +449,116 @@ class laenum:
         for a, b in pairs:
             Canvas["Lines"].append({
                 "type": "Pixel⇒UnSignedTen",
-                "from": range["UnSignedTen"].getPixelCoords(points[a]["Ten"]["UnSigned"]["X"], points[a]["Ten"]["UnSigned"]["Y"]),
-                "to": range["UnSignedTen"].getPixelCoords(points[b]["Ten"]["UnSigned"]["X"], points[b]["Ten"]["UnSigned"]["Y"]),
+                "from": range["UnSignedTen"].getPixelCoords(points[a]["Ten"]["UnSigned"]["X"], points[a]["Ten"]["UnSigned"]["Y"], not unflip),
+                "to": range["UnSignedTen"].getPixelCoords(points[b]["Ten"]["UnSigned"]["X"], points[b]["Ten"]["UnSigned"]["Y"], not unflip),
             })
             Canvas["Lines"].append({
                 "type": "Vector⇒UnSignedTen",
-                "from": range["UnSignedTen"].getVectorCoords(points[a]["Ten"]["UnSigned"]["X"], points[a]["Ten"]["UnSigned"]["Y"]),
-                "to": range["UnSignedTen"].getVectorCoords(points[b]["Ten"]["UnSigned"]["X"], points[b]["Ten"]["UnSigned"]["Y"]),
+                "from": range["UnSignedTen"].getVectorCoords(points[a]["Ten"]["UnSigned"]["X"], points[a]["Ten"]["UnSigned"]["Y"], not unflip),
+                "to": range["UnSignedTen"].getVectorCoords(points[b]["Ten"]["UnSigned"]["X"], points[b]["Ten"]["UnSigned"]["Y"], not unflip),
             })
             Canvas["Lines"].append({
                 "type": "Pixel⇒SignedTen",
-                "from": range["SignedTen"].getPixelCoords(points[a]["Ten"]["Signed"]["X"], points[a]["Ten"]["Signed"]["Y"]),
-                "to": range["SignedTen"].getPixelCoords(points[b]["Ten"]["Signed"]["X"], points[b]["Ten"]["Signed"]["Y"]),
+                "from": range["SignedTen"].getPixelCoords(points[a]["Ten"]["Signed"]["X"], points[a]["Ten"]["Signed"]["Y"], not unflip),
+                "to": range["SignedTen"].getPixelCoords(points[b]["Ten"]["Signed"]["X"], points[b]["Ten"]["Signed"]["Y"], not unflip),
             })
             Canvas["Lines"].append({
                 "type": "Vector⇒SignedTen",
-                "from": range["SignedTen"].getVectorCoords(points[a]["Ten"]["Signed"]["X"], points[a]["Ten"]["Signed"]["Y"]),
-                "to": range["SignedTen"].getVectorCoords(points[b]["Ten"]["Signed"]["X"], points[b]["Ten"]["Signed"]["Y"]),
+                "from": range["SignedTen"].getVectorCoords(points[a]["Ten"]["Signed"]["X"], points[a]["Ten"]["Signed"]["Y"], not unflip),
+                "to": range["SignedTen"].getVectorCoords(points[b]["Ten"]["Signed"]["X"], points[b]["Ten"]["Signed"]["Y"], not unflip),
             })
             Canvas["Lines"].append({
                 "type": "Pixel⇒UnSignedDec",
-                "from": range["UnSignedDec"].getPixelCoords(points[a]["Dec"]["UnSigned"]["X"], points[a]["Dec"]["UnSigned"]["Y"]),
-                "to": range["UnSignedDec"].getPixelCoords(points[b]["Dec"]["UnSigned"]["X"], points[b]["Dec"]["UnSigned"]["Y"]),
+                "from": range["UnSignedDec"].getPixelCoords(points[a]["Dec"]["UnSigned"]["X"], points[a]["Dec"]["UnSigned"]["Y"], not unflip),
+                "to": range["UnSignedDec"].getPixelCoords(points[b]["Dec"]["UnSigned"]["X"], points[b]["Dec"]["UnSigned"]["Y"], not unflip),
             })
             Canvas["Lines"].append({
                 "type": "Vector⇒UnSignedDec",
-                "from": range["UnSignedDec"].getVectorCoords(points[a]["Dec"]["UnSigned"]["X"], points[a]["Dec"]["UnSigned"]["Y"]),
-                "to": range["UnSignedDec"].getVectorCoords(points[b]["Dec"]["UnSigned"]["X"], points[b]["Dec"]["UnSigned"]["Y"]),
+                "from": range["UnSignedDec"].getVectorCoords(points[a]["Dec"]["UnSigned"]["X"], points[a]["Dec"]["UnSigned"]["Y"], not unflip),
+                "to": range["UnSignedDec"].getVectorCoords(points[b]["Dec"]["UnSigned"]["X"], points[b]["Dec"]["UnSigned"]["Y"], not unflip),
             })
             Canvas["Lines"].append({
                 "type": "Pixel⇒SignedDec",
-                "from": range["SignedDec"].getPixelCoords(points[a]["Dec"]["Signed"]["X"], points[a]["Dec"]["Signed"]["Y"]),
-                "to": range["SignedDec"].getPixelCoords(points[b]["Dec"]["Signed"]["X"], points[b]["Dec"]["Signed"]["Y"]),
+                "from": range["SignedDec"].getPixelCoords(points[a]["Dec"]["Signed"]["X"], points[a]["Dec"]["Signed"]["Y"], not unflip),
+                "to": range["SignedDec"].getPixelCoords(points[b]["Dec"]["Signed"]["X"], points[b]["Dec"]["Signed"]["Y"], not unflip),
             })
             Canvas["Lines"].append({
                 "type": "Vector⇒SignedDec",
-                "from": range["SignedDec"].getVectorCoords(points[a]["Dec"]["Signed"]["X"], points[a]["Dec"]["Signed"]["Y"]),
-                "to": range["SignedDec"].getVectorCoords(points[b]["Dec"]["Signed"]["X"], points[b]["Dec"]["Signed"]["Y"]),
+                "from": range["SignedDec"].getVectorCoords(points[a]["Dec"]["Signed"]["X"], points[a]["Dec"]["Signed"]["Y"], not unflip),
+                "to": range["SignedDec"].getVectorCoords(points[b]["Dec"]["Signed"]["X"], points[b]["Dec"]["Signed"]["Y"], not unflip),
             })
 
         for point in points:
             Canvas["Circles"].append({
                 "type": "Pixel⇒UnSignedTen",
-                "point": range["UnSignedTen"].getPixelCoords(points[point]["Ten"]["UnSigned"]["X"], points[point]["Ten"]["UnSigned"]["Y"]),
+                "point": range["UnSignedTen"].getPixelCoords(points[point]["Ten"]["UnSigned"]["X"], points[point]["Ten"]["UnSigned"]["Y"], not unflip),
             })
             Canvas["Circles"].append({
                 "type": "Vector⇒UnSignedTen",
-                "point": range["UnSignedTen"].getVectorCoords(points[point]["Ten"]["UnSigned"]["X"], points[point]["Ten"]["UnSigned"]["Y"]),
+                "point": range["UnSignedTen"].getVectorCoords(points[point]["Ten"]["UnSigned"]["X"], points[point]["Ten"]["UnSigned"]["Y"], not unflip),
             })
             Canvas["Circles"].append({
                 "type": "Pixel⇒SignedTen",
-                "point": range["SignedTen"].getPixelCoords(points[point]["Ten"]["Signed"]["X"], points[point]["Ten"]["Signed"]["Y"]),
+                "point": range["SignedTen"].getPixelCoords(points[point]["Ten"]["Signed"]["X"], points[point]["Ten"]["Signed"]["Y"], not unflip),
             })
             Canvas["Circles"].append({
                 "type": "Vector⇒SignedTen",
-                "point": range["SignedTen"].getVectorCoords(points[point]["Ten"]["Signed"]["X"], points[point]["Ten"]["Signed"]["Y"]),
+                "point": range["SignedTen"].getVectorCoords(points[point]["Ten"]["Signed"]["X"], points[point]["Ten"]["Signed"]["Y"], not unflip),
             })
             Canvas["Circles"].append({
                 "type": "Pixel⇒UnSignedDec",
-                "point": range["UnSignedDec"].getPixelCoords(points[point]["Dec"]["UnSigned"]["X"], points[point]["Dec"]["UnSigned"]["Y"]),
+                "point": range["UnSignedDec"].getPixelCoords(points[point]["Dec"]["UnSigned"]["X"], points[point]["Dec"]["UnSigned"]["Y"], not unflip),
             })
             Canvas["Circles"].append({
                 "type": "Vector⇒UnSignedDec",
-                "point": range["UnSignedDec"].getVectorCoords(points[point]["Dec"]["UnSigned"]["X"], points[point]["Dec"]["UnSigned"]["Y"]),
+                "point": range["UnSignedDec"].getVectorCoords(points[point]["Dec"]["UnSigned"]["X"], points[point]["Dec"]["UnSigned"]["Y"], not unflip),
             })
             Canvas["Circles"].append({
                 "type": "Pixel⇒SignedDec",
-                "point": range["SignedDec"].getPixelCoords(points[point]["Dec"]["Signed"]["X"], points[point]["Dec"]["Signed"]["Y"]),
+                "point": range["SignedDec"].getPixelCoords(points[point]["Dec"]["Signed"]["X"], points[point]["Dec"]["Signed"]["Y"], not unflip),
             })
             Canvas["Circles"].append({
                 "type": "Vector⇒SignedDec",
-                "point": range["SignedDec"].getVectorCoords(points[point]["Dec"]["Signed"]["X"], points[point]["Dec"]["Signed"]["Y"]),
+                "point": range["SignedDec"].getVectorCoords(points[point]["Dec"]["Signed"]["X"], points[point]["Dec"]["Signed"]["Y"], not unflip),
             })
 
         return Canvas
 
-    def generatePoints(self):
+    def generatePoints(self, unflip = False):
         num = 0
         points = {}
 
+        R = self.getR()
         for point in self.iterBaselae4conc():
             Point = {}
             num = num + 1
 
-            Point["R"] = self.getR()
+            Point["R"] = R
 
             # Initialization of variables
             Point["Ten"] = {}
             Point["Id"] = num
             Point["Ten"]["Signed"] = {}
-            Point["Ten"]["Signed"]["SrcAxeY"] = self.axes.SignedAxeTenYstr(num)
-            Point["Ten"]["Signed"]["SrcY"] = self.axes.SignedAxeTenYpnt(num, point)
+            Point["Ten"]["Signed"]["SrcAxeY"] = self.axes.SignedAxeTenYstr(R)
+            Point["Ten"]["Signed"]["SrcY"] = self.axes.SignedAxeTenYpnt(R, point)
             Point["Ten"]["Signed"]["X"] = 2**(2*num - 1)
-            Point["Ten"]["Signed"]["Y"] = self.axes.SignedAxeLaeY(num, point)
+            Point["Ten"]["Signed"]["Y"] = self.axes.SignedAxeLaeY(R, point)
             Point["Ten"]["UnSigned"] = {}
-            Point["Ten"]["UnSigned"]["SrcAxeY"] = self.axes.UnSignedAxeTenYstr(num)
-            Point["Ten"]["UnSigned"]["SrcY"] = self.axes.UnSignedAxeTenYpnt(num, point)
+            Point["Ten"]["UnSigned"]["SrcAxeY"] = self.axes.UnSignedAxeTenYstr(R)
+            Point["Ten"]["UnSigned"]["SrcY"] = self.axes.UnSignedAxeTenYpnt(R, point)
             Point["Ten"]["UnSigned"]["X"] = 2**(2*num)
-            Point["Ten"]["UnSigned"]["Y"] = self.axes.UnSignedAxeLaeY(num, point)
+            Point["Ten"]["UnSigned"]["Y"] = self.axes.UnSignedAxeLaeY(R, point)
             Point["Dec"] = {}
             Point["Dec"]["Signed"] = {}
-            Point["Dec"]["Signed"]["SrcAxeY"] = self.axes.SignedAxeDecYstr(num)
-            Point["Dec"]["Signed"]["SrcY"] = self.axes.SignedAxeDecYpnt(num, point)
+            Point["Dec"]["Signed"]["SrcAxeY"] = self.axes.SignedAxeDecYstr(R)
+            Point["Dec"]["Signed"]["SrcY"] = self.axes.SignedAxeDecYpnt(R, point)
             Point["Dec"]["Signed"]["X"] = 2**(2*num - 1)
-            Point["Dec"]["Signed"]["Y"] = self.axes.SignedAxeDecY(num, point)
+            Point["Dec"]["Signed"]["Y"] = self.axes.SignedAxeDecY(R, point)
             Point["Dec"]["UnSigned"] = {}
-            Point["Dec"]["UnSigned"]["SrcAxeY"] = self.axes.UnSignedAxeDecYstr(num)
-            Point["Dec"]["UnSigned"]["SrcY"] = self.axes.UnSignedAxeDecYpnt(num, point)
+            Point["Dec"]["UnSigned"]["SrcAxeY"] = self.axes.UnSignedAxeDecYstr(R)
+            Point["Dec"]["UnSigned"]["SrcY"] = self.axes.UnSignedAxeDecYpnt(R, point)
             Point["Dec"]["UnSigned"]["X"] = 2**(2*num)
-            Point["Dec"]["UnSigned"]["Y"] = self.axes.UnSignedAxeDecY(num, point)
+            Point["Dec"]["UnSigned"]["Y"] = self.axes.UnSignedAxeDecY(R, point)
 
             points[Point["Id"]] = Point
 
