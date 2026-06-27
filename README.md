@@ -15,6 +15,8 @@ CoPilot's confirmation - "diploma" series of Laegna, where it operates the robot
 
 # Q&A: Verification of SC5N Canvas and Lane Data Integrity
 
+![SC5N Data Integrity — Canonical vs Flipped Geometry](Images/sc5n_data_integrity.png)
+
 > **Q1.**  
 > Can the SC5N canvas and lane datasets (flipped and unflipped versions) be
 > considered internally consistent, coordinate‑correct, and logically coherent?
