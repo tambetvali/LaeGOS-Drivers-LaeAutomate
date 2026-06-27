@@ -98,8 +98,6 @@ ecosystem.
 > Are there any exceptions, edge‑cases, or special behaviors in the SC5N
 > datasets that require attention when interpreting or using the data?
 
-![Flipped and Unflipped SC5N Data Storage Symmetry](Images/sc5n_flipped_unflipped_storage.png)
-
 **A3.**  
 Yes, a few meaningful exceptions exist, all intentional:
 
