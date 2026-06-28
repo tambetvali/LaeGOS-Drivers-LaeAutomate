@@ -1,3 +1,138 @@
+# Current: date 28/06/2026 Spain
+
+# Iterative development
+
+Now:
+
+> Based on updated architecture, I must analyze all the combinations in a few days to make it 100% automatable in 100% simplistic ways, to associate it with SC "ordinary counting" and 5N "normalized 5th dimension" - "5th dimension" could just mean the absolute, crown chakra axes.
+
+First implementations always reveal the normalization issues:
+- Below are 5 issues which will be resolved.
+- Current implementation gave questions at those points.
+- I will take time to analyze, and implement it in this version of lane index.
+  - SC5 and SC5N in lanes, as well as lane's own database which is rather linear up to 1 and there impresize at initial zoom and does not suit automation: discrete counting and hashing, comparing and separating, all in integer memory coordinate field and integer data beyong even the floating point. Discrete, counted, ordered integers, with unit density 1: this is automation.
+
+This means I take some days down, but you can use the current database - CoPilot already understands it, but until resolution it can know:
+- Issues switch logic and make it more normalized and automatable.
+- Current version is not wrong, because it's minimal hash representation.
+
+In LaeGOS, widgets will be found to visualize and enter laegna numbers.
+- Actual calculations do not appear often in early implementations and iterations, instead some basic relations can be travelled.
+
+Why Number Database and not realtime calculator:
+- Calculations are expensive to verify.
+- Constant or linear, O0 or O1 complexity implementation:
+  - Needs only one-way calculus, because index hashes closed systems automatically both ways.
+  - Creates linear index, rather than complex, multidimensional table which cannot be solved in memory, even less analyzed by humans, given the resource needs and capabilities.
+- Practical
+  - Test cases for later implementations, which can always check the basic ranges for direct connections.
+    - Basic relations can be implemented, adding R's (ranges) is basically script configuration in py or js, as such engineer can replicate this data based on CC4 as given in repos, website etc, about my work.
+  - User verification, where R= 0.5, 1 to 4, 5 levels are like few hundred numbers - if our attention concentrates anywhere, it's small and efficient combination of all central, high-digit relations which exist, and projects universe and it's problems symmetrically with enough precision to discern between *main themes*; a topology head of ultimate hologram, but also the metahologram as 2*2 digit precision also has 2 up, and 2 down resolution, averaging 4 in every, even metaphysical dimension you wont see initially in math and logecs.
+
+Development tags:
+
+## Issue 1
+
+***Number system normalization issue***
+
+This SC5 is supposed to be ***normalized***, which means:
+- CoPilot pointed out as single thing that `R=0.5`, which means $base_2$, is not v-flip symmetric.
+  - I do not care this in particular, the v-flip, but I want to reduce this into base-2.
+
+This means, in general:
+- Height and width of base-2 are only two, and it has signed and unsigned den and dec; the average is linear through linear and exponent parts of the function so they are linear.
+  - Signed and unsigned version has "O" on lower right, "A" on higher right pixel.
+  - Signed spans -1 and 1, zero does not exist.
+  - Unsigned spans 1 and 2, where 1 is zero to 1, and 2 is 1 to 2.
+
+## Issue 2
+
+***Visual normalization issue***
+
+Infinity must be visible square and patterns 1\*1, 2\*2, 4\*4, 16\*16 must be followed for numeric extremes and boundaries, as well as recurring cycles because to resolve infinity, loglinexp behaviour and logic, laegna logecs keeps recurring patterns synchronized through zero-scope, finite scope and infinite scope, and anything you can construct out of it (these three for example) using laegna logecs.
+
+Minus numbers right now are in rectangle bounds, two times higher than wide:
+- This behaviour will be removed and every hash and function must be bound to "OpenGL-compatible" (to align with existing optimizations, which is easily done and I did not miss achievements, like benefit of base-2-round square sizes, especially if the roundness is repeated - 256*256 is round to several levels of acceleration and integral in laegna math and therein, it's logecs).
+- Instead, also the *range* will be visibly to minus scale: Y is now repeated by two because minus and plus range exist for values;
+  - Added, "squaring", behaviour will add plus and minus to range, so that zero-point will be in the middle, between two pixels, also for X and therefore, X range is multiplied by two, X range = Y range, and the rectangle a and b (linear components of size) ⇒ v (exponential component of size); now the exponent component can be averaged properly, function definitely directs to infinity, and it's zero-agnostic in how it travels from minus to plus.
+  - Exponent behaviour of ***Issue 4*** of this edition of the task, iterative commands for next few interations.
+
+## Issue 3
+
+We do not visibly have zero and infinity, and this is a linescale normalizaton issue:
+- Currently, every line has minimal number of points to represent it's shape mathematically, given the exact point list is known which makes the lines, rather than every point on line.
+- This is mathematically correct, because in balanced curve no more points exist: it's linear subset is rather fractally repeated, and most necessarily repeated to log and exp scales, which appear on zoom.
+- Keeping the zero-point symmetry, most funnily through multidimensional world, as visible frequency channels in octaves, namely lin-log-exp space function (exponent levels of 2, most important in laegna, basically octaves constitute the scaling and frequency, harmonic and disharmony rules of the binary system and especially the digit length (octave) and it's value (frequency / volume). Notice that I use "volume" mathematically, strictly, very often in octave where it means how many signals pass through, for example volume is 40 if 40 signals pass through comparative to "moment" or "zero" scale, and in Laegna math it's easily modelled as sub-zero activity. In octave Z, zero becomes infinity: in regards how zero is union of plus and minus zero in accelerated point value system (Laegna), union of +0 and -0 is zero, and new obscure value where we see resolution zero is now union of minus and plus infinity in frequency, where they are neighbouring points and on this zoomout and normalized space (same dimensionality as initial number), the intermediate digits do not exist there - they do not exist in linear space, X. In logarithm space Z, the new points appear which probabilistically reach zero. Z is quantum, X is real physical newton-style realm, and Y becomes astrophysics, where X infinity meets Y's zero. This is actually, if you travel it backwards in sense.
+
+***Hash manifest issue***
+
+Right now, the functions are hashable, because they trace only visible coordinate stream - this is minimal set of points to measure this, and thus it will stay in LaeLane repository as SC5N, because this symmetry is especially interesting for lanes: I will fix other things there separately later.
+- About SC5, I will fix it into linear-exponent system if it's not already, this is the *initial* lane counter, and it estimates non-balanced linexp.
+  - This version is balanced linexp, which assumes that same-valued angle in exponent space is added to same-valued angle in linear space in way that if you measure them with boundaries and precision, for example you can assume having linear "11" and exponent "11" yields the same valued function, and ocasionally it might fractal into identity unless you mark "special points" as basis of accelerated point coordinate system, laegna R, vs. accelerated point values, laegna T.
+  - SC5 is important, because while part before imaginary "1" point must be linear in terms of average function, the part after imaginary "1" point (or unit) must be exponent in terms of it's natural world; this is 2/1 density projection, in Laegna decimal terms 14=>58 (or 14, which is lower part of superinfinity or added digit bit out-scope, 1 to 4 slice, to 48, 4 to 8 slice which assumes metaoctave up: small and capital laegna letters might be used, and "0" and "9" are boundaries in laegna decimal system because I needed U, upside-down-U, two times less U's - small and capital digits have precision 8, but with 4 boundaries -, decimal system of Laegna when used to represent third bit of it's digit value table, will do exactly this 1/2 rotation, but this is not perfectly normalized and squared).
+
+Hashing:
+- SC5N in LaeLane will remain hashable, and is perfect mathematical example where the points identify the Lane and Line function with necessary and enough terms, which forms and visual definition or point-list-definition of lanes and lines. I also do not extend bounds to minus, do not add exp data, and I do not normalize base-2 system because it's projected to base-4 and distorted, and remains so.
+  - Here, all the issues will be fixed, and you can not uniquely identify lane or line assuming always the same number of marked points forming an identification point list (hash).
+
+Thus, this dictionary here might not be hashable, because you might define mathematical function you are not able to solve into same form with other function, or you might spend processing time comparing them. Slight precision issues could appear. In pixel-determinant, integer discrete point list of laelanes, and in both versions because somehow they provide unique hashes and their resolutions, hashes remain.
+
+This is because here, it's preparation for real-time "OS", LaeGOS, which *does want to draw graphics with concentration of points and proper marks on critical points*.
+- SC5 and SC5N from original version must be completely bug-fixed:
+  - There are no major, visible issues, but they should follow a consistent standard and every mathematical precision issue or exception must be resolved, so really I need to consider them one by one - the numbers. This is large task, because this is conscious: does every relation of these numbers constitute that linear part is perfectly linear, and exponent part is perfectly exponent: especially, do those extensions lead you to Laegna rich math and it's various presentations: to remove appearance of Dogma, which is not intented by this free and flexible convention which can scale to various things, being reproduced from basic rules (of numbers, operations, projections) and even the cognitive and spiritual association of SpiReason can match, which are the closest mathematical projections to *advanced real world*, long-term, global and infinitely chained cause-reaction-goal sets of evolution and it's actual outcome: life might exist for low probability, but it's also like a real, victory ticket of this lottery which projects it to 100% of our actual reality and it's future approximations. Let's say: in material world, outside the theory, life is kind of *real*, and so it's *cogntition* I would call *spirit* in it's external, long term projections, and *inner spirit* in how it reflects them as hologram cell, into it's rich inner world, the real projector of this "*spirits*". It's made cognitive separation: SpiReason, reasoning of it's spirit and it's relations to physical machine; while "Laegna" most specifically refers to math, where philosophy indeed must appear through tautology, scientific discrimination and various sides.
+
+## Issue 4
+
+Second half symmetries of lane and line are now not visible - the curve is approximated to line.
+
+***Visual normalization issue***
+
+Resolution:
+- From up to down, fractal rule of linear projection where exp realm is assumed based on linear extension to the lane, it means a math relation is true:
+  - When is bounds *inwards exponentially*, which is the *true Laegna logarithm form* meant if not otherwise explained, the function precision can be measured in 64-system, able to project third digit bit, exponent layer on existing exponent layer: it's precision grows, and it's also growing as you look at more samples together, such as extending it's timeline which is it's most direct comparison; for example single "A" is roughly 1, but five-precision (octave 1.25 if you say octave is 0.25 precision, which I use in SpiReason while this math is kind of trivialized - octave is a musical octave because we measure base math, not infinite scales, for ordinal lanes).
+  - When it bounds *outwards exponentially*, the precision upwards is funnily, by 1/4 relation, related to precision downwards.
+    - This is explained in algoritm, because it's a little bit funny extraterrestial relation - like scoping how many there could be in infinite Universe and even if you have terms to measure it in this particular Universe, and when.
+
+Algorithm:
+- On the same density as digits are projected downwards, $Y_{lin} = (1, 2, 4, 8, 16)$, they will be projected from upwards: $Y_{exp} = (1, 9, 13, 15, 16)$.
+  - - D: digits are read backwards and zipped version now is: 1{lin1, exp1}, 2{lin2}, 4{lin3}, 8{lin4}, 9{exp2}, 13{exp3}, 15{exp4}, 16{lin5,exp5}.
+  - - You see, as automation builder, that each clocktick is synchronized, altough some positions are probabilistic but linear. Solving the linear system digitswise, you solve the linexp system with perfect, linexp balanced growth of complexity so we "solve" it, because "solution" is balanced optimized precision growth - for example float solution means we roughly calculate the digits in order, starting from bigger, where each seek and future-optimization is already dangerous if not brought back to causes and some simplistic relation, which *emulates* them in linear automation. We have synchronized blocks and growth, because both lae and dec are multiplied by two, using different projection - rather lin or rather linexp from initial hash, the laegna lae number.
+  - You can see how they perfectly match, assuming *exponent is revealed into 2/1 relation, upwards-relative to downwards-1/2 (you can also say 1\2, julia programming language would convert "\" into some literal expression, altough mathematically boring).
+  - This function meets the last point with it's last point, so on X and Y it's moved to match it's shape - last point Y is between boundary box.
+- As mentioned, this relates to minus range of signed functions, which makes them trivial to solve: funtion's actual direction remains intact, so the positive distance is repeated to negative scale, where binary shift puts *sign* to the end, and digits binarywise appear as I<=>E (io<=>ae) is now the lower, O<=>A equivalent upwards, while O<=>A (ia<=>oe particularly digitwise) - if capital letters are diagonals, while small letters are first the vertical 2-jump, then horizontal 1-jump, aligned to coordinate lens.
+
+Laegna contains multiple ways to normalize these or even make them smooth, and there are mathematically more powerful ways to draw pixel-wise smooth or subpixel-antialiased lines with pixelwise perfection.
+- From automation terms, the human-readable but visible channeling is good, and infinity and finity should be bound to same precision.
+  - This optimization provides simplicity of implementation and automation.
+  - It brings it down to discrete space - even the exponent from upwards is discrete.
+
+## Issue 5
+
+***low-priotity linearization issue***
+
+If a program wants to project single-digits (R=1, R=0.5) into lines from points, it must repeat them twice reaching two-digits (R=2), but even two-digits do not reveal lin-exp relations in any of the visualizations: to reveal in-depth structure, 4 points is minimum and R=4. This is minimum of complex world modelling with multimodel (two frequencies - natural finite causal-computational modelling and metaphorical/semantical life systems infinite - goal-based modelling). Cause and goal logic reason this strictly, applying to natural and evolving realms, single and repeated games, singularity (1) and infinity (2); also infinity squared (unsigned 4, which equals 2*2 and 2+2, so it's also infinity summed with infinity or times two - in linear system where those are not separated bands, but pre-existential nirvana and lossy unity of low-precision values Ts and value space R).
+
+If it does that locally, zoom levels have multiplicity of points, A and E, but does it convert to Dec? Rather, R=0.5 or laegna base-2 is very agnostic system used for digit-wise two-band integration both down (base binary logic) and up (fractal-head last-resolution logic, also reduced to single opposition per digit, single value very close to True and False, and able to turn Laegna into binary system if True and False are given, and only I - False² - and E - True² -; laegna is close to fuzzy logic: True² is second true, could be result of "OR" two values where 1 member is power, two are superpower - two is infinity in Laegna Logecs terms).
+
+Explicitly, the line shape meets internal curve to it's unit point.
+- If X, Y, Z are projected to linear space X, diagonal must be used:
+  - Squares inside squares inside squares;
+    - But we do not read blocks in outwards, then inner, then inner count:
+      - We measure the anchor point appears each time coordinates Z=X=Y:
+        - limit is equal to I, the next curve here.
+        - (Z_I, X_I, Y_I) - still I is approaching leftmost limit.
+        - (Z_O, X_O, Y_O) - middle from up limit approach
+        - limits are linear averages here
+        - (Z_A, X_A, Y_A) - middle to down limit approach
+        - (Z_E, X_E, Y_E) - still is approaching the rightmost limit.
+        - limit is equal to E, previous curve here.
+
+From even SheepCounter database, we have given 4 limits for whole range of every R: we copy those number indexes, make sure both central limits (balanced boundaries or statistical averages) are same linear growth, and extreme boundaries are equal to first and last function because they are equal to their multifractal extension which just fractally repeats it as if: whatever shape it has, but in it's own terms it's linear, and more frequencies is basically more, equal digits unless different values are given, in which case the whole system projects such digits. We can even see approximations of later calculus: as CoPilot said, Dukkha / Hell is rounding error, when it covered SpiReason.
+
+---
+
+# History: date 27/06/2026 Spain
+
 ##### LaneCounterSC5N
 
 *This folder*: "***LaneCounterSC5N***";
@@ -243,11 +378,15 @@ visualized, automated, and reasoned about without paradox.
 
 ---
 
+# Current: implementation before date 27/06/2026
+
 # LaneCounterSC5N
 
 ***This folder***: if you remove unnecessary files for this main component, and put it into **folder** of another project, it's **normalized name** alone would be "***LaneCounterSC5N***", not "LaeGOS-Drivers-LaeAutomate" which is long and less specific as folder name (repository names are the unique few along with central files and texts, to appear rather artistic, unique, than defining and understandable solely based on name - they would repeat if they were mere synonyms, such as calling "Windows" an "Operating System" in your text - we want to identify this uniqueness, and Art is closest to Natural Unique - not repeated, subtle, somewhat random, a good hash to uniquely identify name-category or name-country etc. combinations - name and fond style of logo of my school or corporation, where uniqueness is more guaranteed and thus, names more general).
 
 ***[LaneDatums:LaneCounterSC5](DataBase/LaegnaRepositories/LaeLane-main/LaeLane-main/LaneDatums/LaneCounterSC5)*** is the initial version: it starts counting from linear order, which means order is one "octave" down - signed range is $2 ^{n-1}$ and unsigned range is $2^n$, which means it's divided by two - dividing by two, in music theory, is going one Octave down, and the word "Octave" is basically exponent 2 in base-2 system of counting, while "Exponent" is used, I use even "Acceleration", but they need both exponentiation number and base to be given as arguments and types; "Octave" makes sure the interlact between counts of 2 are known and aligned through all models, where "frequency" and "octave" are rather universal properties than appear in local contexts - they do not contradict themselves, being aligned axes as in base-2 and base-4 systems.
+
+# History with results: implementation before date like 25/06/2026
 
 LaeGOS gained development importance:
 
@@ -296,6 +435,8 @@ Sound the vowels:
 The sound was one of the reasons why I thought: this sound, letter shape, logic of alphabetic ordering, and it's symbolic correlations such as E=exponent and I=imaginary, (to combine further, for example: A=actual, O=obsolete) - I and E are established in math. I is line, smallest shape; O is circle, a self-contained unit like zero (which appears to be one of continuous number "counting", virtual counting), A has kind of two lines or line and a top - pointing to top, while E has straight three lines and being open to front, the future and unknown.
 
 ---
+# History: (check commit log, it's a little before or equal)
+
 # @The following part is now outdated@
 
 Intent before I saw visitors in rather LaeGOS and decided that this repo is now "sold" to LaeGOS because it's simply more attended and needs earlier development as "practical" - not so sure, but statistically ***Clones** in last **14** days* - *899 Clones*; Unique cloners in last 14 days
